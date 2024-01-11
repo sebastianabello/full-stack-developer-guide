@@ -1,0 +1,43 @@
+body {
+  background-color: #000;
+}
+
+//Sin Scss
+/*
+.articulo {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.articulo .titulo {
+  color: #000;
+}
+
+.articulo .autor {
+  color: red;
+}
+
+.article p a {
+  text-decoration: none;
+}
+*/
+
+//Con Scss
+.articulo {
+  background-color: #f2f2f2;
+  padding: 20px;
+  .title {
+    color: #000;
+  }
+  .autor {
+    color: $colorprimario;
+  }
+  p {
+    a{
+      text-decoration: none;
+    }
+  }
+}
+
+$colorprimario: red;
+$colorsecundario: blue;

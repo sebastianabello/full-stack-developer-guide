@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	background-color: green;
+	height: 400px;
+	width: 100%;
+	/* Define que una caja sera flexbox de bloque o flexbox de linea */
+	/* flex | inline-flex */
+	display: flex;
+	/* Define que el eje principañ (main axis) row - x, column -y  */
+	/* row | row reverse  | column | column-reverse */
+	flex-direction: row;
+	/* Define como se van a ordenar los elementos */
+	/* Define si la caja flexbox envuelve o NO a sus hijos */
+	/* wrap | nowrap | wrap-reverse */
+	flex-wrap: nowrap;
+	/* Define la alineacion de los hojos en el eje transversal (cross axis), dentro de cada linea */
+	/* stretch | flex-start | fle-end | center | baseline */
+	align-items: stretch;
+	/* Define la alineacion de los hijos en el eje trasversal (cross axis), no funciona cuando los hijos estan en una sola linea es decir no puede esta en (nowrap) */
+	/*flex-start | flex-end | center | space-between | space-around | space-evenly |*/
+	align-content: flex-start;
+}
+.item {
+	border: medium solid green;
+	background-color: brown;
+	/* Cuando la caja flexbox tenga espacio sobrante, es la habilidad de crecer, el valor por defecto es 0, no se aceptan valores negativos */
+	flex-grow: 0;
+	/* Cuando la caja flexbox NO tenga espacio sobrante, es la habilidad de encogense, el valor por defecto es 1, no se aceptan valores negativos */
+	flex-shrink: 1;
+	/* Es el tamaño del elemento hijo dentro de la línea de la caja flexbox Si la caja flexbox tiene dirección de fila, flex-basis representa el width Si la caja flexbox tiene dirección de columna, flex-basis representa el height Valor por defecto auto */
+  flex-basis: auto;
+  /* Es la propiedad que combina a flex-grow, flex-shrink y flex-basis en una sola propiedad */
+  /* flex-grow | flex-shrink | flex-basis */
+  flex: 0 1 auto;
+  /* Indica el ordern que tendran los elementos hijos en la caja flexbox valor por defecto 0 se acetan valores negativos */
+  order: 0;
+  /*  */
+  align-self: stretch;
+  /* stretch | flex-start | flex-end | center | baseline */
+  /* Sobreescribe el valor de la propiedad align-items sólo para el elemento hijo especificado */
+}
+
+.item:nth-child(2) {
+  /* flex-grow: 0; */
+  /* flex-shrink: 2; */
+  order: -1;
+}
+
+.item:nth-child(3) {
+  /* flex-grow: 0; */
+  align-self: center;
+}
