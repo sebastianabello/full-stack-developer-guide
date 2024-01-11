@@ -15,4 +15,4 @@ This is a small guide on topics to be discussed by a full stack developer, I mad
 
 ### Inspirado en:
 - Canal de Jhonatan Mircha
--- 🔔canal: https://youtube.com/jonmircha?sub_confirmation=1 🤓
+-- 🔔canal: https://youtube.com/jonmircha?sub_confirmation=1
