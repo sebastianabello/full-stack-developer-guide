@@ -25,7 +25,7 @@
 	align-items: stretch;
 	/* Define la alineacion de los hijos en el eje trasversal (cross axis), no funciona cuando los hijos estan en una sola linea es decir no puede esta en (nowrap) */
 	/*flex-start | flex-end | center | space-between | space-around | space-evenly |*/
-	align-content: flex-start;
+	align-content: space-around;
 }
 .item {
 	border: medium solid green;
