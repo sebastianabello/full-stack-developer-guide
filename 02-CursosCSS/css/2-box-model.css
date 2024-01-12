@@ -5,7 +5,7 @@ Modelo de Caja: Es la forma en que CSS ve a los elementos HTML y ¿cómo los ve?
   1. El contenido (content): El contenido (texto) del elemento HTML, tomando en cuanta sus dimensiones (width & height)
   2. El borde (border): Lo que delimita cada uno de los elementos HTML
   3. El relleno (padding): Son las distancias internas (La distancia del borde al contenido)
-  3. El márgen (margin): Son las distancias externas (La distancia entre el elemento html y sus elementos hermanos o padres)
+  4. El márgen (margin): Son las distancias externas (La distancia entre el elemento html y sus elementos hermanos o padres)
 
 Dentro del modelo de caja hay que considerar que una caja tendrá 4 lados:
   1. Arriba (top)
@@ -19,8 +19,8 @@ h1 {
 	height: 200px;
 	/* propiedades de tipo shorthand */
 	border-color: green;
-	border-width: thick;
 	/* thin - 1px , medium - 3px, thick - 5px */
+	border-width: thick;
 	border-top-color: red;
 	/* none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset */
 	border-style: solid;
@@ -87,7 +87,7 @@ Caja de Bloque
 }
 
 .caja-linea {
-	margin: 10px;
+	margin: 30px;
 	display: inline;
 }
 

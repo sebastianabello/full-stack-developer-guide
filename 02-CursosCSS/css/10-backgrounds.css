@@ -11,6 +11,8 @@ background-position:
 background-clip: define cuánto debe extenderse el fondo dentro del elemento.
 background-origin: define el origen de la imagen de fondo.
 background-attachment: define cómo se comportará la imagen de fondo al desplazarse por la página
+  - scroll: la imagen de fondo se desplaza junto con el resto del contenido
+  - fixed: la imagen de fondo permanece fija en su lugar, incluso cuando el contenido se desplaza
 */
 
 body {
@@ -48,6 +50,7 @@ body {
   background-repeat: no-repeat;
 }
 
+/* Segundo valor es center si no se llega a especificar */
 .bg-position {
   background-color: skyblue;
   background-image: url("../assets/puesta-sol.jpg");
@@ -109,7 +112,7 @@ body {
   height: 30vh;
   background-image: url("../assets/favicon.png"),
     url("../assets/puesta-sol.jpg");
-  background-repeat: repeat-x, no-repeat;
+  background-repeat: repeat-x;
   background-size: 10%, cover;
 }
 

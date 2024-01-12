@@ -50,7 +50,7 @@ Posicionamiento CSS
   right: 50px;
   top: -30px;
   left: -10px;
-  top: 300px;
+  top: 350px;
   left: 50px;
 }
 
@@ -75,7 +75,7 @@ Posicionamiento CSS
   position: relative;
   width: 600px;
   height: 50px;
-  top: 50px;
+  top: 5px;
   left: 50px;
 }
 
@@ -86,8 +86,8 @@ Posicionamiento CSS
   top: 0; */
   /* bottom: 0;
   right: 0; */
-  top: -50px;
-  left: -30px;
+  top: 0px;
+  left: 0px;
 }
 
 /* fixed: El elemento pierde sus dimensiones y posición original en el flujo del documento. Si se mueve toma como referencia el documento HTML y queda fijo en la posición, cuando el scroll se mueva, el elemento no lo hará, queda FIJO */
@@ -98,7 +98,7 @@ Posicionamiento CSS
   height: 100px;
   /* right: 20px;
   bottom: 10px; */
-  top: 30px;
+  top: 500px;
   left: 400px;
 }
 
@@ -126,7 +126,7 @@ Para que este comportamiento funcione el elemento sticky debe ser hijo directo d
 
 A mayor valor el elemento esta más al frente, a menor valor más al fondo.
 
-Un elemento padre nunca podrá estar sobre sus elementos hijos, sin embargo los elementos hijos si pueden dándoles un valor negativo y que el elemento padre no tenga definido valor de z-index */
+Un elemento padre nunca podrá estar sobre sus elementos hijos, sin embargo los elementos hijos si pueden estar por debajo dándoles un valor negativo y que el elemento padre no tenga definido valor de z-index */
 .z-index-1,
 .z-index-2 {
   background-color: mediumaquamarine;

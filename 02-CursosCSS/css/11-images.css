@@ -19,6 +19,6 @@ img {
   object-fit: scale-down; /* toma el valor que sea menor de los valores contain y none */
   object-position: left top;
   object-position: right bottom;
-  object-position: -50px center;
   object-position: 50% 50%;
+  object-position: 0px center;
 }

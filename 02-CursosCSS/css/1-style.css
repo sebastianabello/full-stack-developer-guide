@@ -137,15 +137,16 @@ https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
 */
 
 .form-pseudoclases *:required {
-	border-color: blue;
+	border-color: purple;
 }
 
 .form-pseudoclases *:valid {
 	border-color: green;
+	outline: none;
 }
 
 .form-pseudoclases *:invalid {
-	border-color: green;
+	border-color: red;
 }
 
 .form-pseudoclases *:focus {
@@ -162,6 +163,7 @@ https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
 
 .menu-pseudoclases a:hover {
 	color: pink;
+  text-decoration: none;
 }
 
 .p-pseudoclases:hover {
@@ -182,7 +184,8 @@ https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
 }
 /* Tercer hijo */
 .lista-pseudoclases li:nth-child(3) {
-	color: navy;
+	color: gold;
+  font-size: larger;
 }
 /* Hijos desde el numero 4, y le aplica a los demas hijos de 4 en 4*/
 .lista-pseudoclases li:nth-child(4n) {

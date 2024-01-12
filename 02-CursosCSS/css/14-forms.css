@@ -62,7 +62,8 @@ html {
 
 .contact-form input[type="submit"]:hover {
   cursor: pointer;
-  opacity: 0.75;
+  opacity: 0.9;
+  color: #000;
 }
 
 .contact-form textarea {

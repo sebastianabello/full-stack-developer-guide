@@ -135,7 +135,7 @@ writing-mode
   text-transform: lowercase;
   text-transform: uppercase;
   text-transform: none;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.9rem;
   /* word-breack:
     normal- predeterminado
     break-all - rompe la palabra en cualquier lugar
