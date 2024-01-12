@@ -7,13 +7,13 @@
   <!-- title - entre 55 y 65 caracteres -->
   <title>Aprendiendo HTML</title>
   <!-- description - no más de 165 caracteres -->
-  <meta name="description" content="En esta página estamos aprendiendo lo fundamentos de HTML con @jonmircha">
+  <meta name="description" content="En esta página estamos aprendiendo lo fundamentos de HTML">
   <link rel="canonical" href="http://tudominio.com/la-url-canonica">
   <link rel="icon" href="img/favicon.png">
   <link rel="apple-touch-icon" href="img/favicon.png">
   <meta name="theme-color" content="#FF6600">
   <meta property="og:title" content="Aprendiendo HTML">
-  <meta property="og:description" content="En esta página estamos aprendiendo lo fundamentos de HTML con @jonmircha">
+  <meta property="og:description" content="En esta página estamos aprendiendo lo fundamentos de HTML>
   <meta property="og:image" content="https://tudominio.com/img/periodic-table-of-html-elements.png">
   <meta property="og:url" content="https://tudominio.com/index.html">
   <meta name="twitter:card" content="summary">
@@ -42,6 +42,7 @@
   <p>Aprendiendo sobre Diseño Web</p>
   <h3>Temario del Curso</h3>
   <!-- ul>li*18>a -->
+  <!-- EL memu de html -->
   <ul>
     <li><a href="index.html#encabezados">Encabezados HTML</a></li>
     <li><a href="index.html#textos-basicos">Etiquetas de Texto Básicas</a></li>
@@ -70,7 +71,9 @@
     <li><a href="index.html#accesibilidad">Accesibilidad Web</a></li>
   </ul>
   <hr>
+  <!-- Los encabezados van son h1,h2,...,h6 -->
   <h2 id="encabezados">Encabezados HTML</h2>
+  <!-- Es mala practica tener mas de un h1 en una pagina de html -->
   <h1>Encabezado de nivel 1 - sólo puede existir un h1 por documento html</h1>
   <h2>Encabezado de nivel 2</h2>
   <h3>Encabezado de nivel 3</h3>
@@ -78,12 +81,15 @@
   <h5>Encabezado de nivel 5</h5>
   <h6>Encabezado de nivel 6</h6>
   <br>
-  <a href="index.html#inicio">☝️</a>
+  <a href="index.html#inicio">☝️Volver al menu</a>
   <hr>
+  <!-- Etiquetas de texto-- tener en cuenta que existen mas, pero estas son las basicas para empezar: -->
   <h2 id="textos-basicos">Etiquetas de Texto Básicas</h2>
   <p>Un párrafo</p>
+  <!-- si escribes (lorem) y luego le das un tab esto genera un texto de relleno -->
   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur odio saepe repellat debitis consequuntur
     architecto eaque deserunt quisquam aliquid nemo. Ex delectus provident qui unde id tempore, eos doloremque ut.</p>
+    <!-- Algunas etiquetas tambien nos sirven para aplicar estilos pero al igual lo podemos hacer en css, no existe ningun problema o no es mala practica usar esas etiquetas por si te lo preguntas -->
   <p>
     Palabras en: <b>negrita</b>, <i>itálica</i>, <u>subrayado</u>, e=mc<sup>2</sup>, H<sub>2</sub>O,
     <mark>marca texto</mark> <small>letras pequeñas</small>
@@ -91,15 +97,19 @@
   <br>
   <a href="index.html#inicio">☝️</a>
   <hr>
+  <!-- El texto semantico ayuda a que el navegador comprenda que es lo que estamos escribiendo asi sera mas facil que el sepa a que nos referimos en unas cuantas partes del codigo -->
   <h2 id="textos-semanticos">Etiquetas de Texto Semánticas</h2>
   <p>
     <strong>Este texto es importante</strong>. <em>Este texto hace énfasis</em>.
+    <!-- Cuando se refiere a enfasis quiere decir que es la Fuerza de expresión o de entonación con que se quiere realzar la importancia de lo que se dice o se lee. -->
   </p>
+  <!-- Para agregar un cita-->
   <blockquote>Yo sólo sé, que no se nada</blockquote>
   <cite>Sócrates</cite>
   <br>
-  <a href="index.html#inicio">☝️</a>
+  <a href="index.html#inicio">☝️Volver al inicio</a>
   <hr>
+  <!-- Las etiquetas de salto nos ayudan a dividir un texto o partirlo en donde queramos, ya que en un archivo html no existen los (enter) , no solo es para texto pero es para lo que mas se usa, -->
   <h2 id="etiquetas-saltos">Etiquetas de Saltos</h2>
   <p>
     Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>Illum accusantium laborum veritatis eius dolor numquam
@@ -110,6 +120,7 @@
   <hr>
   <h2 id="etiquetas-formateo">Etiquetas de Formateo</h2>
   <p>
+    <!-- Esta etiqueta sirva para cuando nosotros queremos contar los saltos de linea y espaciado -->
   <pre>
     Tareas por hacer:
     - HTML
@@ -124,6 +135,7 @@
     <code>Este texto está en formato de código</code>
   </p>
   <p>
+    <!-- si aplicas esto puedes hacer un tipo de estilo bonito por si en algun momento necesitas mostrar codigo, existen mas formas pero es una idea basica -->
   <pre>
       <code>
         import React from "react";
@@ -138,6 +150,7 @@
   <br>
   <a href="index.html#inicio">☝️</a>
   <hr>
+  <!-- Las etiquetas semanticas ayudan al que navegador entienda en que seccion se esta indicando, gracias a estas estiquetas nuestro posicionamiento en relacion a otras paginas web  -->
   <h2 id="etiquetas-semanticas">Etiquetas Semánticas Estructurales</h2>
   <div>div - Es una etiqueta contenedora que no tiene semántica</div>
   <header>header - Cabecera de un sitio web o de una sección</header>
@@ -155,7 +168,7 @@
   <section>section - Representa una sección de contenido genérico</section>
   <address>address - Representa una información de contacto</address>
   <br>
-  <a href="index.html#inicio">☝️</a>
+  <a href="index.html#inicio">☝️Volver al inicio</a>
   <hr>
   <h2 id="bloque-linea">Etiquetas de Bloque VS Etiquetas de Línea</h2>
   <div style="background-color: yellow; color: red;">La etiqueta de bloque por excelencia es la div, una etiqueta de
@@ -180,7 +193,6 @@
   <img src="img/periodic-table-of-html-elements.png" alt="Tabla Periódica de los Elementos HTML">
   <img src="img/puesta-sol.jpg" alt="Puesta del sol y kEnAi">
   <img src="img/this-is-fine.gif" alt="Meme del perro This Is Fine">
-  <img src="img/kEnAi.svg" alt="kEnAi">
   <br>
   <a href="index.html#inicio">☝️</a>
   <hr>
@@ -379,7 +391,7 @@
     <dd>Es el lenguaje de la web</dd>
   </dl>
   <br>
-  <a href="index.html#inicio">☝️</a>
+  <a href="index.html#inicio">☝️Volver al inicio</a>
   <hr>
   <h2 id="tablas">Tablas</h2>
   <table>
@@ -454,13 +466,14 @@
   <h2 id="enlaces">Enlaces</h2>
   <a href="hola.html">Hacia la página Hola</a>
   <br>
-  <a href="https://jonmircha.com" target="_blank" rel="nofollow">Visita mi sitio web jonmircha.com</a>
+  <a href="https://......" target="_blank" rel="nofollow">Visita un citio cualquiera a la web</a>
   <br>
+  <!-- El target=_blank hace que se abra en otra ventana y no en la que estamos actualmente -->
   <a href="https://jonmircha.com/cursos" target="_blank">
-    <img src="img/kEnAi.svg" alt="Ir hacia mis cursos en jonmircha.com" width="40" height="40">
+    <img src="img/kEnAi.svg" alt="Ir hacia" width="40" height="40">
   </a>
   <br>
-  <a href="https://youtube.com/jonmircha" target="_blank">
+  <a href="https://..." target="_blank">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" clip-rule="evenodd"
         d="M5 7H19C19.5523 7 20 7.44771 20 8V16C20 16.5523 19.5523 17 19 17H5C4.44772 17 4 16.5523 4 16V8C4 7.44772 4.44772 7 5 7ZM2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM10 9L14 12L10 15V9Z"
@@ -529,7 +542,7 @@
   <br>
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.6654003373211!2d-99.16814652076648!3d19.427021863930683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses-419!2smx!4v1625355039715!5m2!1ses-419!2smx"
-    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   <br>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/F55LNTW3GE0" title="YouTube video player"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -589,7 +602,7 @@
     <option value="">Python</option>
   </select>
   <br>
-  <input type="text" value="jonmircha" readonly disabled>
+  <input type="text" value="sebasdev" readonly disabled>
   <br>
   <input type="text" placeholder="Escribe tu nombre">
   <br>
