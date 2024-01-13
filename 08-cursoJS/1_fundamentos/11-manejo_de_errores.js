@@ -12,7 +12,7 @@ try {
 } finally {
   //no es muy usado finally
   console.log(
-    "El bloque finaly se ejecuta siempre al final de un unbloque try-catch"
+    "El bloque finaly se ejecuta siempre al final de un un bloque try-catch"
   );
 }
 
