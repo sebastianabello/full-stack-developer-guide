@@ -52,6 +52,8 @@ console.table(perro);
 console.clear();
 
 //Consular tiempo de un peticion
+
+//El nombre que se le coloque al time es como un alias entonces para hacer llamo al mismo, en el timeEnd este se tiene que llamar igual si no es asi no se mostrara nada por la consola
 console.time("Cuanto tiempo tarda mi codigo");
 const arreglo = Array(1000000);
 for (let i = 0; i < arreglo.length; i++) {
@@ -59,3 +61,16 @@ for (let i = 0; i < arreglo.length; i++) {
 }
 console.timeEnd("Cuanto tiempo tarda mi codigo");
 console.clear();
+
+//Para saber cuantas veces fue ejecutado un bloque de codigo se puede usar:
+for (let i = 0; i <= 100; i++) {
+  console.count("codigo for");
+  console.log(i);
+}
+
+//Existe forma de hacer prubas unitarias pero de una forma basica esto se vera mas adelante o con otro curso se complementara pero es una pequeña forma:
+
+let x = 3,
+  y = 2,
+  pruebaXY = "Se espera que X siempre sea menor que Y";
+console.assert(x < y, { x, y, pruebaXY });
