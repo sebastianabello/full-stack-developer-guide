@@ -15,9 +15,9 @@ This is a small guide on topics to be discussed by a full stack developer, I mad
 1. 🔴 Responsive y Arquitectura _CSS_
 1. 🟣 Scss
 1. 🟡 JavaScript
-   -- Fundamentos
-   -- Modulos
-   -- Ejercicios logicos
+   - Fundamentos
+   - Modulos
+   - Ejercicios logicos
 
 ### Inspirado en:
 
