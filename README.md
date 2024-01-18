@@ -7,21 +7,23 @@ This is a small guide on topics to be discussed by a full stack developer, I mad
 -This guide is going to start with html and css topics, most of them related to it, if I find a way to also put frameworks and make small annotations I will do it, keep in mind that it is based on what I have read and studied, if you have any annotation or something that is not like that, let me know and I will gladly change it, thank you very much for seeing the repository, I know that it will be very useful for you so as not to forget some useful things.
 
 1. 🟠 HTML
-   - 🟠 Fundamentos de HTML
+   - 🟠 HTML Fundamentals
 1. 🔵 CSS
-   - 🔵 Fundamentos de CSS
-   - 🔵 Unidades y Estilos CSS
-   - 🔵 Efectos Visuales y Movimiento en CSS
+   - 🔵 CSS Fundamentals
+   - 🔵 CSS Units and Styles
+   - 🔵 Visual Effects and Motion in CSS
    - 🟡 Flex
    - 🟡 Grid
-   - 🔴 Responsive y Arquitectura _CSS_
+   - 🔴 Responsive and CSS Architecture
    - 🟣 Scss
 1. 🟡 JAVASCRIPT
-   - 🎯 Fundamentos
-   - 📁 Modulos
-   - 📚 Ejercicios logicos
+   - 🎯 JavaScript Fundamentals
+   - 📁 Modules
+   - 📚 Logical exercises
+   - 🕒 Asynchrony
+   - 🔩 New data types
 
-### Inspirado en:
+### Inspired by:
 
-- Canal de Jhonatan Mircha
-  - 🔔canal: https://youtube.com/jonmircha?sub_confirmation=1
+- Jhonatan Mircha's Channel
+  - 🔔Channel: https://youtube.com/jonmircha?sub_confirmation=1
