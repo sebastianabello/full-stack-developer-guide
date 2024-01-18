@@ -1,0 +1,11 @@
+{
+  "cadena": "Sebasdev",
+  "numero": 123,
+  "booleano": true,
+  "areglo": ["Sebasdev", 123, true],
+  "objeto": {
+    "propiedad1": "valor1",
+    "propiedad2": "valor2"
+  },
+  "nulo": null
+}
