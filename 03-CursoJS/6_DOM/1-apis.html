@@ -5,6 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM</title>
   </head>
+  <style>
+    :root{
+        --yellow-color: #f7df1e;
+        --dark-color: #222;
+    }
+    .cards{
+        border: thin solid var(--dark-color);
+        padding: 1rem;
+    }
+    .card{
+        display: inline-block;
+        background-color: var(--dark-color);
+        color: var(--yellow-color);
+    }
+    .rotate-45{
+        transform: rotate(45deg);
+    }
+    .rotate-135{
+        transform: rotate(135deg);
+    }
+    .opacity-80{
+        opacity: .8;
+    }
+    .sepia{
+        filter: sepia(1);
+    }
+    img{
+        width: 100px;
+        height: 100px;
+    }
+
+
+</style>
   <body>
     <h1>WEB APIs</h1>
     <h2>Dom: Document Object Model</h2>
@@ -24,6 +57,55 @@
       <li>MatchMedia</li>
       <li>etc...</li>
     </ul>
-    <script src="2-introduccion.js"></script>
+    <br>
+    <hr>
+    <br>
+    <h3>Manejo del DOM</h3>
+    <p class="que-es">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus fuga minima aliquid quam, aut nemo quibusdam pariatur optio perferendis debitis, atque exercitationem, assumenda natus commodi repellendus ipsum quas temporibus. Accusantium?
+    </p>
+    <nav id="menu">
+      <ul>
+        <li><a href="#">seccion 1</a></li>
+        <li><a href="#">seccion 2</a></li>
+        <li><a href="#">seccion 3</a></li>
+        <li><a href="#">seccion 4</a></li>
+        <li><a href="#">seccion 5</a></li>
+      </ul>
+    </nav>
+    <input type="text" name="nombre" id="Nombre">
+    <a class="link-dom" href="1-apis.html">Dom</a>
+    <section class="cards">
+      <figure class="card">
+        <img src="https://picsum.photos/id/234/200/200" alt="random">
+          <ficaption>random1</ficaption>
+        </img>
+      </figure>
+      <figure class="card">
+        <img src="https://picsum.photos/id/200/200/200" alt="random">
+          <ficaption>random2</ficaption>
+        </img>
+      </figure>
+      <figure class="card">
+        <img src="https://picsum.photos/id/220/200/200" alt="random">
+          <ficaption>random3</ficaption>
+        </img>
+      </figure>
+      <figure class="card">
+        <img src="https://picsum.photos/id/240/200/200" alt="random">
+          <ficaption>random4</ficaption>
+        </img>
+      </figure>
+      <figure class="card">
+        <img src="https://picsum.photos/id/213/200/200" alt="random">
+          <ficaption>random5</ficaption>
+        </img>
+      </figure>
+    </section>
+
+
+
+    <!-- <script src="2-introduccion.js"></script> -->
+    <script src="3-nodos-elementos-selectores.js"></script>
   </body>
 </html>
