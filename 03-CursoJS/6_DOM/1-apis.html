@@ -35,6 +35,20 @@
         width: 100px;
         height: 100px;
     }
+    .eventos-flujo div{
+        padding: 4rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .uno{
+      background-color: yellow;
+    }
+    .dos{
+      background-color: gold;
+    }
+    .tres{
+      background-color: lightyellow;
+    }
 
 
 </style>
@@ -102,10 +116,28 @@
         </img>
       </figure>
     </section>
+    <h3>Manejadores de eventos</h3>
+    <button onclick="alert(`Holi`)">Evento con atributo HTML</button>
+    <button onclick="alert(holaMundo())">Evento con atributo HTML</button>
+    <br><br><br>
+    <button class="evento-semantico">Evento con manejador semantico</button>
+    <button class="evento-multiple">Evento con manejador multiple</button>
 
+    <h4>Flujo de eventos</h4>
+    <section class="eventos-flujo">
+      <div class="uno">
+        1
+        <div class="dos">
+          2
+          <div class="tres">
+            3
+          </div>
+      </div>
+    </section>
 
 
     <!-- <script src="2-introduccion.js"></script> -->
-    <script src="3-nodos-elementos-selectores.js"></script>
+    <!-- <script src="12-manejadores-de-eventos.js"></script> -->
+    <script src="13-flujo-de-eventos.js"></script>
   </body>
 </html>
