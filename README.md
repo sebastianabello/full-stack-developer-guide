@@ -23,6 +23,7 @@ This is a small guide on topics to be discussed by a full stack developer, I mad
    - 🕒 Asynchrony
    - 🔩 New data types
    - DOM
+   - BOM
 
 ### Inspired by:
 
