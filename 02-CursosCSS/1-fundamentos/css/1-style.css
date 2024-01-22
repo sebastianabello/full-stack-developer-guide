@@ -10,11 +10,11 @@ Regla CSS consta de 2 partes
 */
 
 /* Son mala práctica por que son bloqueantes a la hora de que el navegador lee esta instrucción */
-@import url('otro-hoja.css');
+@import url("otro-hoja.css");
 
 h1 {
-	color: orangered;
-	background-color: black;
+  color: orangered;
+  background-color: black;
 }
 
 /* 
@@ -37,98 +37,98 @@ Selectores Básicos
 */
 
 p {
-	color: midnightblue;
+  color: midnightblue;
 }
 
 /* Dar estilos con Id se considera un AntiPatrón */
 #parrafo-dos {
-	background-color: skyblue;
+  background-color: skyblue;
 }
 
 /* Dar estilos con clases nos permite reutilizar nuestro código CSS */
 .bg-skyblue {
-	background-color: skyblue;
+  background-color: skyblue;
 }
 
 .bg-steelblue {
-	background-color: steelblue;
+  background-color: steelblue;
 }
 
 .text-20 {
-	font-size: 20px;
+  font-size: 20px;
 }
 
 .text-32 {
-	font-size: 32px;
+  font-size: 32px;
 }
 
 .text-white {
-	color: white;
+  color: white;
 }
 
 /* Significa que son todas las etiquetas li que estan dentro de un padre de clase .hijos-directos, tambien se tiene en cuenta que tiene que ser hijo directo*/
 
 .hijos-directos > li {
-	background-color: thistle;
+  background-color: thistle;
 }
 
 /* En este caso aplica a todos los hijos que esten dentro de la clase .hijos-descendientes */
 .hijos-descendientes b {
-	background-color: thistle;
+  background-color: thistle;
 }
 
 /* Los selectores de hermanos van a aplicar a los elementos que son hermanos y que estén por debajo del elemento de referencia */
 .hermanos-general ~ li {
-	background-color: thistle;
+  background-color: thistle;
 }
 
 /* El selector + indica que toma solo el hermano que le sigue segun sea el caso, en esta ocacion tiene que estar en un contenedor de hermanos-adyacentes  y con el + indica que coje el sigueinte a ese*/
 .hermanos-adyacentes + li {
-	background-color: thistle;
+  background-color: thistle;
 }
 
 /* Selectores de atributos */
 .selectores-atributos a[href] {
-	color: orangered;
+  color: orangered;
 }
 
-.selectores-atributos a[target='_blank'] {
-	font-weight: bold;
+.selectores-atributos a[target="_blank"] {
+  font-weight: bold;
 }
 
 /* El comodín del * aplica el estilo si contiene el texto en cuestión en cualquier parte */
-.selectores-atributos a[href*='sebasdev'] {
-	font-size: 24px;
+.selectores-atributos a[href*="sebasdev"] {
+  font-size: 24px;
 }
 
 /* El comodín del ^ aplica el estilo si contiene el texto en cuestión al inicio */
 .selectores-atributos a[href^="http://"]
 {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /* El comodín del $ aplica el estilo si contiene el texto en cuestión al final */
-.selectores-atributos a[href$='.com'] {
-	background-color: black;
+.selectores-atributos a[href$=".com"] {
+  background-color: black;
 }
 
 /* El comodín del ~ aplica el estilo si contiene el texto en cuestión en una lista separada por espacios */
-.selectores-atributos a[class~='cursos'] {
-	background-color: midnightblue;
+.selectores-atributos a[class~="cursos"] {
+  background-color: midnightblue;
 }
 
 /* El comodín del | aplica el estilo si contiene el texto en cuestión en una lista separada por espacios y que despues del texto en cuestión venga un guión medio - */
-.selectores-atributos a[class|='menu'] {
-	font-style: italic;
+.selectores-atributos a[class|="menu"] {
+  font-style: italic;
 }
 
 /* Selector Universal */
 * {
-	font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 .selector-universal * {
-	font-size: 20px;
+  font-size: 20px;
 }
 
 /* 
@@ -137,90 +137,90 @@ https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
 */
 
 .form-pseudoclases *:required {
-	border-color: purple;
+  border-color: purple;
 }
 
 .form-pseudoclases *:valid {
-	border-color: green;
-	outline: none;
+  border-color: green;
+  outline: none;
 }
 
 .form-pseudoclases *:invalid {
-	border-color: red;
+  border-color: red;
 }
 
 .form-pseudoclases *:focus {
-	background-color: gold;
+  background-color: gold;
 }
 
 .form-pseudoclases *:disabled {
-	background-color: palegoldenrod;
+  background-color: palegoldenrod;
 }
 
 .menu-pseudoclases a:visited {
-	color: brown;
+  color: brown;
 }
 
 .menu-pseudoclases a:hover {
-	color: pink;
+  color: pink;
   text-decoration: none;
 }
 
 .p-pseudoclases:hover {
-	font-size: 20px;
+  font-size: 20px;
 }
 
 #temario-css:target {
-	background-color: lightgreen;
+  background-color: lightgreen;
 }
 
 /* Primer hijo */
 .lista-pseudoclases li:first-child {
-	color: green;
+  color: green;
 }
 /* Ultimo hijo */
 .lista-pseudoclases li:last-child {
-	color: violet;
+  color: violet;
 }
 /* Tercer hijo */
 .lista-pseudoclases li:nth-child(3) {
-	color: gold;
+  color: gold;
   font-size: larger;
 }
 /* Hijos desde el numero 4, y le aplica a los demas hijos de 4 en 4*/
 .lista-pseudoclases li:nth-child(4n) {
-	font-size: 30px;
+  font-size: 30px;
 }
 /* Desde el hijo 3+ 1 pero va de 3 en 3*/
 .lista-pseudoclases li:nth-child(3n + 1) {
-	font-weight: bold;
+  font-weight: bold;
 }
 /* Los hijos que son numero par */
 .lista-pseudoclases li:nth-child(even) {
-	background-color: green;
+  background-color: green;
 }
 /* Los hijos que son impares */
 .lista-pseudoclases li:nth-child(odd) {
-	background-color: blue;
+  background-color: blue;
 }
 
 /* Primer elemento de tipo p */
 .articulo-pseudoclases p:first-of-type {
-	background-color: grey;
+  background-color: khaki;
 }
 
 /* Ultimo elemento de tipo p */
 .articulo-pseudoclases p:last-of-type {
-	background-color: violet;
+  background-color: violet;
 }
 /* Tercer elemento de tipo p */
 .articulo-pseudoclases p:nth-of-type(3) {
-	background-color: chartreuse;
+  background-color: chartreuse;
 }
 
 /* Tolos los elementos que  no tienen un elemento p */
 .articulo-pseudoclases *:not(p) {
-	background-color: gold;
+  background-color: gold;
 }
 
 /*
@@ -229,52 +229,52 @@ https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos
 */
 
 .saga-geminis::before {
-	content: '🤼‍♂️';
+  content: "🤼‍♂️";
 }
 
 .saga-geminis::after {
-	content: '♊';
+  content: "♊";
 }
 
 .saga-precio::before {
-	content: '$';
-	font-weight: bold;
+  content: "$";
+  font-weight: bold;
 }
 
 .saga-precio::after {
-	content: 'USD';
-	font-weight: bold;
+  content: "USD";
+  font-weight: bold;
 }
 
 .p-pseudoelementos::first-letter {
-	font-weight: bold;
-	font-size: 32px;
+  font-weight: bold;
+  font-size: 32px;
 }
 
 .p-pseudoelementos::first-line {
-	color: coral;
+  color: coral;
 }
 
 .p-pseudoelementos::selection {
-	color: greenyellow;
-	background-color: black;
+  color: greenyellow;
+  background-color: black;
 }
 
 .input-pseudoelementos::placeholder {
-	color: green;
+  color: green;
 }
 
 /* Agrupar Selectores */
-.form-agrupar-selectores input[type='text'],
-.form-agrupar-selectores input[type='email'],
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
 .form-agrupar-selectores textarea {
-	border-color: yellow;
-	border-width: 2px;
-	border-style: dashed;
-	background-color: black;
-	font-size: 20px;
-	display: block;
-	width: 300px;
+  border-color: yellow;
+  border-width: 2px;
+  border-style: dashed;
+  background-color: black;
+  font-size: 20px;
+  display: block;
+  width: 300px;
 }
 
 /* 
@@ -304,48 +304,48 @@ https://web.dev/learn/css/inheritance/#which-properties-are-inheritable
 */
 
 blockquote#cita-marco.cita-marco {
-	background-color: lightsteelblue;
+  background-color: lightsteelblue;
 }
 
 blockquote {
-	background-color: burlywood;
+  background-color: burlywood;
 }
 
 #cita-marco {
-	background-color: lightgreen;
+  background-color: lightgreen;
 }
 
 blockquote.cita-marco {
-	background-color: tomato;
+  background-color: tomato;
 }
 
 .cita-marco {
-	background-color: cornflowerblue;
+  background-color: cornflowerblue;
 }
 
 .cita-marco {
-	background-color: mediumaquamarine !important;
+  background-color: mediumaquamarine !important;
 }
 
 blockquote#cita-marco {
-	background-color: lightsalmon;
+  background-color: lightsalmon;
 }
 
 .cita-marco {
-	background-color: moccasin !important;
-	background-color: darkorange !important;
-	font-size: 32px;
-	border-style: dotted;
-	border-color: red;
+  background-color: moccasin !important;
+  background-color: darkorange !important;
+  font-size: 32px;
+  border-style: dotted;
+  border-color: red;
 }
 
 .cita-marco cite {
-	background-color: pink;
-	background-color: inherit;
-	font-size: 24px;
-	font-size: initial;
-	border-style: inherit;
-	border-color: inherit;
+  background-color: pink;
+  background-color: inherit;
+  font-size: 24px;
+  font-size: initial;
+  border-style: inherit;
+  border-color: inherit;
 }
 
 /* 

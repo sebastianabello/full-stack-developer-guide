@@ -9,12 +9,19 @@ img {
   height: 400px;
 }
 
+/*
+object-fit: fill; // default
+object-fit: cover; sirve para que la imagen se ajuste al tamaño del contenedor
+object-fit: none; // no se ajusta al tamaño del contenedor
+object-fit: contain; // se ajusta al tamaño del contenedor pero no se recorta
+
+*/
 .card img {
   background-color: red;
   height: 300px;
   object-fit: fill; /* default */
-  object-fit: cover;
   object-fit: none;
+  object-fit: cover;
   object-fit: contain;
   object-fit: scale-down; /* toma el valor que sea menor de los valores contain y none */
   object-position: left top;
