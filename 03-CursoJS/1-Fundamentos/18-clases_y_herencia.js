@@ -1,7 +1,7 @@
 //Clases
 
 //Las clases no tienen parametros por lo que se crea un constructor
-//Lo que nos hacen las clase es simplificarnos la escritura
+//Lo que nos hacen las clase es simplificarnos la escritura es azucar sintactico
 class Animal {
   constructor(nombre, genero) {
     this.nombre = nombre;

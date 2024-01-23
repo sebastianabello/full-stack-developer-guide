@@ -33,7 +33,7 @@ console.log(
   //split(): Convierte una cadena de caracteres en un areglo dependiendo el parametro cambia como se separa el areglo
   lorem.split(" "),
   lorem.split(","),
-  //Tener en cuenta que quita el elemento y desde hay es donde se empueza a separar la cadena
+  //Tener en cuenta que quita el elemento y desde hay es donde se empieza a separar la cadena
   lorem.split("l")
 );
 

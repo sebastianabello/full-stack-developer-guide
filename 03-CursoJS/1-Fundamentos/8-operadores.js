@@ -2,6 +2,7 @@
 
 //📌Aritmeticos: + - * / % ()
 
+//El orden en que se ejecutan las operaciones es el mismo que en matematicas es decir primero multiplicacion y division y luego suma y resta
 let a = 5 + (5 - 10) * 3; //res: -10
 console.log(a);
 

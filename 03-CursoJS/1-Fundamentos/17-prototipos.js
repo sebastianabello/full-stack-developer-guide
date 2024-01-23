@@ -1,7 +1,7 @@
 //📌POO (Programacion orientada a objetos)
 /*
 Clases --Modelo a seguir
-objetos --Es una instancia de una clase
+objetos --Es una instancia de una clase (como una copia de la clase)
     Atributos -- Es una caracteristica o propiedad  del objeto(son variables dentro de un objeto)
     Metodos --Son las acciones que un objeto puede realizar (Son funciones dentro de un objeto)
 */

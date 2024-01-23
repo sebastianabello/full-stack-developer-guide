@@ -1,4 +1,5 @@
 //📌Objetos Literales
+//📢Los objetos literales son una forma de crear objetos de forma mas sencilla
 
 let nombre = "Sebas",
   edad = 19;

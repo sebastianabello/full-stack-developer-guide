@@ -3,7 +3,7 @@
 //📌if-else --> Dos condiciones
 
 let edad = 17;
-//Terer presente mucho la condicion y la logica de la condición.
+//Tener presente mucho la condicion y la logica de la condición.
 
 //Caso 1:
 if (edad > 17) {
@@ -41,6 +41,7 @@ if (hora >= 0 && hora < 6) {
 
 //📌Operador ternario
 //Simplifica if-else
+
 //variable = (condicion)? verdadero:falso;
 
 let eresMayor = edad >= 18 ? "Eres mayor de edad" : "Eres menor de edad";

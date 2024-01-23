@@ -1,5 +1,5 @@
 //📌Metodos estaticos
-//📢Es aquel quee se puede ejecutar sin necesidad de instanciar la clase.
+//📢Es aquel que se puede ejecutar sin necesidad de instanciar la clase. una instancia es un objeto que deriva de otro objeto.
 //📌Getters y Setters
 //📢Es aquel que nos permite establecer y obtener los valores de atributos de nuestra clase.
 

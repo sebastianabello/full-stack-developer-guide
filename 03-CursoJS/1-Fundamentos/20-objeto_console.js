@@ -22,6 +22,7 @@ console.log(window);
 
 console.log(document);
 
+//dir muestra todo lo que se puede hacer con el objeto
 console.dir(window);
 console.dir(document);
 

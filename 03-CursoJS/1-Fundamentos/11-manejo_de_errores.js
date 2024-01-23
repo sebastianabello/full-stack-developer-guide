@@ -18,6 +18,7 @@ try {
 
 //📢Ejemplo:
 
+//thorw sirve para lanzar un error personalizado
 try {
   let numero = "y"; //Probar cambiando con un numero
   if (isNaN(numero)) {

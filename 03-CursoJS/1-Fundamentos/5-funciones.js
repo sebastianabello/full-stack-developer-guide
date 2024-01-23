@@ -22,6 +22,7 @@ function funcionQueDevuelveValor() {
 function saludar(nombre, edad) {
   console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`);
 }
+//Ya que tiene un return se debe guardar en una variable
 let valorDeFuncion = funcionQueDevuelveValor();
 
 //📢Invocacion de funcion:
