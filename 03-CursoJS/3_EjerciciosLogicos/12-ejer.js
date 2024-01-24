@@ -21,3 +21,4 @@ factorial(0);
 factorial("13");
 factorial(-4);
 factorial(3);
+factorial(5);
