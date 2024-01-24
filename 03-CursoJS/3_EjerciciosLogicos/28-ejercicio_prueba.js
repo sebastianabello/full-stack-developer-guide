@@ -126,7 +126,7 @@ class Pelicula {
       for (let genero of generos) {
         //console.log(genero,Pelicula.listaGeneros.includes(genero));
         if (!Pelicula.listaGeneros.includes(genero)) {
-          console.error(`Genero incorrecto "${generos.join(", ")}"`);
+          console.error(`Genero incorrecto "${genero.join(", ")}"`);
           Pelicula.generosAceptados();
         }
       }

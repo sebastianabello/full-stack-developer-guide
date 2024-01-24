@@ -13,7 +13,7 @@ const factorial = (numero = undefined) => {
     factorial *= i;
   }
 
-  return console.info(`El factorial es ${numero} es ${factorial}`);
+  return console.info(`El factorial de ${numero} es ${factorial}`);
 };
 
 factorial();

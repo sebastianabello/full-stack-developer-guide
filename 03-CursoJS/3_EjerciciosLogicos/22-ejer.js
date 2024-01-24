@@ -9,7 +9,7 @@ const devolverCuadrados = (arr = undefined) => {
 
   for (const num of arr) {
     if (typeof num !== "number")
-      return console.error(`El valor "${num}" ingresado, no e un numero`);
+      return console.error(`El valor "${num}" ingresado, no es un numero`);
   }
 
   const newArr = arr.map((el) => el * el);

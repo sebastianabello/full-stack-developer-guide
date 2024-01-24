@@ -10,7 +10,7 @@ const validarNombre = (nombre = "") => {
   // ^ --> indica que no puede haber nada antes de la expresion a evaluar.
   // $ --> indica que no puede haber nada despues de la expresion a evaluar.
   // + ---> para que lo evalue por cada caracter en la cadena de texto
-  //(/s) ---> indica que acepta espacion en blanco
+  //(\s) ---> indica que acepta espacion en blanco
 
   let expReg = /^[A-Za-zÑñ\s]+$/g.test(nombre);
 

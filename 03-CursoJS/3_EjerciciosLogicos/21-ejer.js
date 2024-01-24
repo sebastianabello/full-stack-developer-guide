@@ -53,3 +53,7 @@ const validarPatron = (cadena = "", patron = undefined) => {
     ? console.info(`"${email}", cumple con el patron ingresado`)
     : console.warn(`"${email}", No cumple con el patron`);
 };
+
+validarPatron();
+validarPatron(34);
+validarPatron("juan,sas");
