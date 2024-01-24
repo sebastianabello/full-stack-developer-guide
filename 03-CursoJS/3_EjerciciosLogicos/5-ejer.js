@@ -1,4 +1,4 @@
-//4) Programa una funcion que retpita un texto X veces
+//4) Programa una funcion que repita un texto X veces
 
 const repetirTexto = (texto = "", cantidad = undefined) =>
   !texto

@@ -24,6 +24,7 @@ const persona1 = {
   },
 };
 //Convertir el objeto persona en una cadena JSON:
+//las funciones no se pueden convertir en JSON por lo que no se incluyen en la cadena
 const persona1JSON = JSON.stringify(persona1);
 console.log(persona1JSON); // {"nombre":"Ana","edad":30,"ciudad":"Madrid"}
 //Convertir la cadena JSON en un objeto JavaScript:

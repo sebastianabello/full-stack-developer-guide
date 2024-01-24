@@ -18,5 +18,5 @@ const textoCadena = (cadena = "", texto = "") => {
 };
 
 textoCadena();
-textoCadena("", "mundo");
+textoCadena("Hola mundo adios mundo", "mundo");
 textoCadena("Hola mundo adios mundo");
