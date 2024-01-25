@@ -191,6 +191,7 @@ console.log(result);
 // Expected output: Array ["exuberant", "destruction", "present"]
 
 //🔴reduce() ----> Aplica una función a un acumulador y a cada valor de un array (de izquierda a derecha) para reducirlo a un único valor.
+//Recibe 4 parametros: acumulador, valorActual, indice, arreglo
 
 const array9 = [1, 2, 3, 4];
 

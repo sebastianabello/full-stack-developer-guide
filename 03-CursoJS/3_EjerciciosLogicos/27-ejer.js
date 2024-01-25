@@ -12,6 +12,7 @@ const promedio = (arr = undefined) => {
       return console.error(`El valor "${num} ingresado, NO es un numero"`);
   }
 
+  //Reduce recibe 4 parametros (acumulador, valorActual, indice, arreglo)
   return console.info(
     arr.reduce((total, num, index, arr) => {
       total += num;

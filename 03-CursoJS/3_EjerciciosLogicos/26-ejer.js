@@ -9,11 +9,18 @@ const elimarDuplicados = (arr = undefined) => {
   if (arr.length === 1)
     return console.error("El arreglo no puede tener solo 1 elemento");
 
-  return console.info({
+  //Recordar que filter puede recibir 3 parametros (valor, indice, arreglo)
+  //Recordar que indexOf devuelve el primer indice del elemento que coincida con el valor especificado, o -1 si ninguno es encontrado.
+  /*return console.info({
     original: arr,
     sinDuplicar: arr.filter(
       (value, index, self) => self.indexOf(value) === index
     ),
+  });*/
+
+  return console.info({
+    original: arr,
+    sinDuplicar: [...new Set(arr)],
   });
 };
 
