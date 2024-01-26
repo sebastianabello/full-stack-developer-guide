@@ -15,8 +15,10 @@ console.log(document.querySelector(".card"));
 //Muestra todos los elementos que coincidan con el selector
 console.log(document.querySelectorAll(".card"));
 
-//querySelectorAll devuelve un array de elementos
+//querySelectorAll devuelve un nodeList
+//Un nodeList es un array de elementos del dom
 console.log(document.querySelectorAll("a"));
+//muestra el tercer elemento que coincida con el selector
 console.log(document.querySelectorAll("a")[2]);
 
 //se puede recorrer con un forEach

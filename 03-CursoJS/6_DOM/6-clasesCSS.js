@@ -11,7 +11,7 @@ console.log($card.classList.contains("rotate-45"));
 $card.classList.add("rotate-45");
 console.log($card.className);
 console.log($card.classList);
-
+console.log($card);
 //Asi como se puede añadir tambien podemos quitar un estilo
 $card.classList.remove("rotate-45");
 

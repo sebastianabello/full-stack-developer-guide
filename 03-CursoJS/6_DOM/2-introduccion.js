@@ -31,5 +31,5 @@ setTimeout(() => {
 }, 3000);
 //document.write nos permite escribir en el html
 //No es muy buena practica usarlo pero en algunos casos es necesario
-//Lo que se esta insertando en el .html se ve despues del llamado al script
+//Lo que se esta insertando en el .html se ve despues del llamado al script o sea al final del body
 document.write("<h2>Hola mundo desde el dom</h2>");

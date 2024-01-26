@@ -2,7 +2,7 @@
 
 //📌Procesamiento Single thread y Multi thread.
 
-//📢JavaScript es un lenguaje de programación de un solo hilo (single-threaded). Esto significa que solo puede realizar una tarea a la vez en el hilo principal de ejecución.
+//📢JavaScript es un lenguaje de programación de un solo hilo (single-thread). Esto significa que solo puede realizar una tarea a la vez en el hilo principal de ejecución.
 //📢Sin embargo, JavaScript puede aprovechar la multitarea mediante la ejecución de operaciones asíncronas en segundo plano a través de eventos, promesas, y llamadas a API web, lo que permite la apariencia de multitarea sin bloquear el hilo principal.
 
 //📌Operaciones de CPU y Operaciones de entrada.

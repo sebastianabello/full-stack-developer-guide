@@ -38,7 +38,7 @@ miSet3.add("manzana");
 console.log(miSet3.size); // 2 (elementos únicos)
 console.log(miSet3.has("manzana")); // true
 miSet3.delete("plátano");
-miSet3.clear();
+// miSet3.clear(); // Elimina todos los elementos
 console.log(miSet3);
 
 //tener en cuenta que los set no son arreglos aunque si son iterables.

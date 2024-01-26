@@ -2,7 +2,7 @@
 const $figure = document.createElement("figure"),
   $img = document.createElement("img"),
   $figcaption = document.createElement("figcaption"),
-  figcaptionText = document.createTextNode("Iglesia"),
+  $figcaptionText = document.createTextNode("Iglesia"),
   $cards = document.querySelector(".cards"),
   $figure2 = document.createElement("figure");
 
@@ -11,7 +11,7 @@ $img.setAttribute("alt", "iglesia");
 $figure.classList.add("card");
 
 //appendChild() agrega un nodo al final de la lista de hijos de un nodo padre especificado.
-$figcaption.appendChild(figcaptionText);
+$figcaption.appendChild($figcaptionText);
 $figure.appendChild($img);
 $figure.appendChild($figcaption);
 $cards.appendChild($figure);

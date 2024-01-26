@@ -16,6 +16,7 @@ $linkDOM.style.color = "white";
 const $html = document.documentElement,
   $body = document.body;
 
+//getComputedStyle() devuelve un objeto con los estilos computados
 let varDarkColor = getComputedStyle($html).getPropertyValue("--dark-color"),
   varYellowColor = getComputedStyle($html).getPropertyValue("--yellow-color");
 

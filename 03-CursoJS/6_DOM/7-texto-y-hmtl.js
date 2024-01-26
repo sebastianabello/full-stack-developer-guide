@@ -12,13 +12,14 @@ let text = `
 </p>
 `;
 
-//innertext no es estandar, no se recomienda usarlo
-//$whatIsDOM.innerText = text;
-$whatIsDOM.textContent = text;
+//innertext no es estandar, no se recomienda usarlo, se inserta tal cual con identacion y saltos de linea
+// $whatIsDOM.innerText = text;
+//textContent es estandar, se inserta tal cual sin identacion y saltos de linea
+// $whatIsDOM.textContent = text;
 
 //contiene toda la nueva insercion
 //para renderizarlo como codigo html se usa:
-$whatIsDOM.innerHTML = text;
+// $whatIsDOM.innerHTML = text;
 
 //segun las etiquetas las pone en difente contenedor
 //remplaza el contenido del dom y lo remplazo por otro

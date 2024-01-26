@@ -48,6 +48,7 @@ const persona = {
 
 const manejador = {
   set(obj, prop, valor) {
+    //Object.Keys(obj) devuelve un array con las propiedades del objeto
     if (Object.keys(obj).indexOf(prop) === -1) {
       return console.error(
         `La propiedad "${prop}" no existe en el objeto persona.`
@@ -62,15 +63,16 @@ const manejador = {
         `La propiedad "${prop}"" sólo acepta letras y espacios en blanco`
       );
     }
+    //Se ponen [] para que se evalúe el valor de la variable prop es decir nombre, apellido o edad
     obj[prop] = valor;
   },
 };
 
-const jon = new Proxy(persona, manejador);
-jon.nombre = "Jon";
-jon.apellido = "MirCha";
-jon.edad = 35;
-jon.twitter = "@jonmircha";
+const juan = new Proxy(persona, manejador);
+juan.nombre = "Juan";
+juan.apellido = "Abello";
+juan.edad = 35;
+juan.twitter = "@jonmircha";
 console.log(jon);
 
 console.log(persona);

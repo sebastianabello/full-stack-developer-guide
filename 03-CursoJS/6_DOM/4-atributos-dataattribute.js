@@ -5,11 +5,13 @@ console.log(document.querySelector(".link-dom").href);
 console.log(document.querySelector(".link-dom").getAttribute("href"));
 
 document.documentElement.lang = "es";
+console.log(document.documentElement.lang);
 
 //constantes escritas con dolar en la primera letra, es para difereciar de codigo js a codigo del dom
 const $linkDOM = document.querySelector(".link-dom");
 console.log($linkDOM);
-
+//setAttribute nos permite cambiar el valor de un atributo del html
+//Tener en cuenta que donde se defina se colocara de una asi se llame con console.log antes algo confuso pero se puede entender probando en la  consola
 $linkDOM.setAttribute("target", "_blank");
 
 //data-attributes
