@@ -36,6 +36,7 @@ header {
   padding: 1rem;
   background-color: var(--main-color);
   color: var(--second-color);
+  z-index: 2;
 }
 header h1 {
   margin: 0 auto;
@@ -60,8 +61,8 @@ header h1 {
   right: 0;
   width: 100%;
   background-color: var(--second-modal-color);
-  transition: transform 0.4s ease;
-  transform: translate(0, -100%);
+  transition: transform 0.5s ease;
+  transform: translate(0, -300%);
 }
 
 .panel.is-active {
@@ -105,6 +106,8 @@ header h1 {
   color: var(--second-color);
   background-color: var(--main-color);
 }
+
+/* **********  Botones del reloj ********** */
 .reloj-c {
   color: #053964;
 }
@@ -120,5 +123,72 @@ header h1 {
 
 .reloj-button button:hover {
   background-color: rgb(235, 115, 115);
+  color: white;
+}
+
+/* **********  Eventos del teclado ********** */
+.stage {
+  display: flex;
+  min-height: 50vh;
+  background-color: var(--main-color);
+}
+
+.ball {
+  margin: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--second-color);
+}
+
+/**************  ScrollTopButton  ******************/
+.scroll-top-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  right: calc(4.25rem + 1vw);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: var(--main-color);
+  color: var(--second-color);
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  transition: all 0.3s ease-out;
+}
+.scroll-top-btn:hover {
+  color: var(--main-color);
+  background-color: var(--second-color);
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/**************  DarkThemeButton  ******************/
+.dark-theme-btn {
+  position: absolute;
+  top: 18px;
+  right: 2vw;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  background-color: var(--second-color);
+  color: var(--second-color);
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  transition: all 0.3s ease-out;
+}
+.dark-theme-btn:hover {
+  color: var(--main-color);
+  background-color: var(--main-color);
+}
+.dark-mode {
+  background-color: var(--second-color);
   color: white;
 }
