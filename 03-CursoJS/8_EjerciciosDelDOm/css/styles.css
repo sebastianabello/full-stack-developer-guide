@@ -192,3 +192,20 @@ header h1 {
   background-color: var(--second-color);
   color: white;
 }
+
+/**************  Network Status  ******************/
+.online,
+.offline {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #1b5e30;
+  color: #fff;
+}
+.offline {
+  background-color: rgb(233, 104, 72);
+}
