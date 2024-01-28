@@ -24,7 +24,8 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-img {
+img,
+video {
   max-width: 100%;
   height: auto;
 }
@@ -60,6 +61,7 @@ header h1 {
   left: 0;
   right: 0;
   width: 100%;
+  overflow-y: auto;
   background-color: var(--second-modal-color);
   transition: transform 0.5s ease;
   transform: translate(0, -300%);
@@ -100,7 +102,7 @@ header h1 {
   font-weight: bold;
   text-decoration: none;
   color: var(--main-color);
-  transition: all 0.3s ease;
+  transition: all 0.6s ease;
 }
 .menu a:hover {
   color: var(--second-color);
@@ -208,4 +210,26 @@ header h1 {
 }
 .offline {
   background-color: rgb(233, 104, 72);
+}
+
+/**************  SearchFilters  ******************/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.card {
+  background-color: var(--main-color);
+  color: var(--second-color);
+  transition: all 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+}
+.card figcaption {
+  padding: 1rem;
+}
+.filter {
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+  order: 1;
 }

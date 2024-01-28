@@ -1,4 +1,8 @@
 import networkStatus from "./js/10_deteccion_red.js";
+import webCam from "./js/11_deteccion_webcam.js";
+import getGeolocation from "./js/12_geolocalizacion.js";
+import searchFilters from "./js/13_filtro_busquedas.js";
+import draw from "./js/14_sorteo.js";
 import hamburguerMenu from "./js/1_menu_hamburguesa.js";
 import { digitalClock, alarm } from "./js/2_reloj.js";
 import { moveBall, shortcuts } from "./js/3_teclado.js";
@@ -31,6 +35,10 @@ d.addEventListener("DOMContentLoaded", (e) => {
   );
   responsiveTester("responsive-tester");
   userDeviceInfo("user-device");
+  webCam("webcam");
+  getGeolocation("geolocation");
+  searchFilters(".card-filter", ".card");
+  draw("#winner-bt", ".player");
 });
 
 //keydown : cuando se presiona una tecla
