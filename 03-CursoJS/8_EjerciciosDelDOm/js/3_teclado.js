@@ -15,6 +15,7 @@ export function moveBall(e, ball, stage) {
   switch (e.keyCode) {
     case 37:
       if (limitsBall.left > limitsStage.left) {
+        //preventDefault(): cancela el evento si este es cancelable, sin detener el resto del funcionamiento del evento, es decir, puede ser llamado de nuevo.
         e.preventDefault();
         x--;
       }
