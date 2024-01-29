@@ -4,6 +4,7 @@ import getGeolocation from "./js/12_geolocalizacion.js";
 import searchFilters from "./js/13_filtro_busquedas.js";
 import draw from "./js/14_sorteo.js";
 import slider from "./js/15_carrusel.js";
+import scrollSpy from "./js/16_scroll_espia.js";
 import hamburguerMenu from "./js/1_menu_hamburguesa.js";
 import { digitalClock, alarm } from "./js/2_reloj.js";
 import { moveBall, shortcuts } from "./js/3_teclado.js";
@@ -41,6 +42,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   searchFilters(".card-filter", ".card");
   draw("#winner-bt", ".player");
   slider();
+  scrollSpy();
 });
 
 //keydown : cuando se presiona una tecla

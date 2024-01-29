@@ -337,7 +337,8 @@ header h1 {
     padding: 0.75rem;
     font-weight: 500;
   }
-  .menu a:hover {
+  .menu a:hover,
+  .menu a.active {
     color: var(--second-color);
     background-color: var(--main-color);
   }
