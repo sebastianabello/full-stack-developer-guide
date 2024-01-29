@@ -5,6 +5,9 @@ import searchFilters from "./js/13_filtro_busquedas.js";
 import draw from "./js/14_sorteo.js";
 import slider from "./js/15_carrusel.js";
 import scrollSpy from "./js/16_scroll_espia.js";
+import smartVideo from "./js/17_video_inteligente.js";
+import contactFormValidations from "./js/18_validaciones_formulario.js";
+import speechReader from "./js/19_narrador.js";
 import hamburguerMenu from "./js/1_menu_hamburguesa.js";
 import { digitalClock, alarm } from "./js/2_reloj.js";
 import { moveBall, shortcuts } from "./js/3_teclado.js";
@@ -43,6 +46,8 @@ d.addEventListener("DOMContentLoaded", (e) => {
   draw("#winner-bt", ".player");
   slider();
   scrollSpy();
+  smartVideo();
+  contactFormValidations();
 });
 
 //keydown : cuando se presiona una tecla
@@ -56,3 +61,5 @@ d.addEventListener("keydown", (e) => {
 
 darkTheme(".dark-theme-btn", "dark-mode");
 networkStatus();
+
+speechReader();
