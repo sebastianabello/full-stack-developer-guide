@@ -1,0 +1,87 @@
+{
+  "lenguajes": [
+    {
+      "id": "2",
+      "nombre": "JavaScript",
+      "frameworks": [
+        "React",
+        "Angular",
+        "Vue.js"
+      ],
+      "anio_creacion": 1995
+    },
+    {
+      "nombre": "Java",
+      "frameworks": "Spring,Hibernate",
+      "anio_creacion": "1995",
+      "id": "3"
+    },
+    {
+      "nombre": "Ruby",
+      "frameworks": "Ruby on Rails",
+      "anio_creacion": "1995",
+      "id": "4"
+    },
+    {
+      "id": "5",
+      "nombre": "C#",
+      "frameworks": [
+        ".NET",
+        "ASP.NET"
+      ],
+      "anio_creacion": 2000
+    }
+  ],
+  "peliculas": [
+    {
+      "id": "1",
+      "titulo": "El Padrino",
+      "genero": [
+        "Drama",
+        "Crimen"
+      ],
+      "director": "Francis Ford Coppola",
+      "anio_lanzamiento": 1972
+    },
+    {
+      "id": "2",
+      "titulo": "Interestelar",
+      "genero": [
+        "Ciencia ficción",
+        "Drama"
+      ],
+      "director": "Christopher Nolan",
+      "anio_lanzamiento": 2014
+    },
+    {
+      "id": "3",
+      "titulo": "Pulp Fiction",
+      "genero": [
+        "Crimen",
+        "Drama"
+      ],
+      "director": "Quentin Tarantino",
+      "anio_lanzamiento": 1994
+    },
+    {
+      "id": "4",
+      "titulo": "El Señor de los Anillos: La Comunidad del Anillo",
+      "genero": [
+        "Fantasía",
+        "Aventura"
+      ],
+      "director": "Peter Jackson",
+      "anio_lanzamiento": 2001
+    },
+    {
+      "id": "5",
+      "titulo": "Cadena Perpetua",
+      "genero": [
+        "Drama",
+        "Crimen"
+      ],
+      "director": "Frank Darabont",
+      "anio_lanzamiento": 1994
+    }
+  ]
+}
