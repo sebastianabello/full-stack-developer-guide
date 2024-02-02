@@ -21,7 +21,7 @@
     %
     initial
     inherit
-  font-weight:: 
+  font-weight:
     normal
     bold
     bolder
@@ -35,7 +35,7 @@
     700
     800
     900
-  font-style::a
+  font-style:
     normal
     italic
     oblique
@@ -180,7 +180,7 @@ writing-mode
 
 /* Separacion de las cada palabra */
 .word-spacing {
-  font-size: 2rem;
+  font-size: 1rem;
   word-spacing: 3rem;
 }
 

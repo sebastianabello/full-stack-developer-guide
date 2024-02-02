@@ -28,13 +28,14 @@
   align-content: space-around;
 }
 .item {
-  border: medium solid green;
+  border: thin solid black;
   background-color: brown;
-  /* Cuando la caja flexbox tenga espacio sobrante, es la habilidad de crecer, el valor por defecto es 0, no se aceptan valores negativos */
+  /* 
+  Cuando la caja flexbox tenga espacio sobrante, es la habilidad de crecer, el valor por defecto es 0 , no se aceptan valores negativos, y 1 crecen los elementos */
   flex-grow: 0;
   /* Cuando la caja flexbox NO tenga espacio sobrante, es la habilidad de encogense, el valor por defecto es 1, no se aceptan valores negativos */
   flex-shrink: 1;
-  /* Es el tamaño del elemento hijo dentro de la línea de la caja flexbox Si la caja flexbox tiene dirección de fila, flex-basis representa el width Si la caja flexbox tiene dirección de columna, flex-basis representa el height Valor por defecto auto */
+  /* Es el tamaño del elemento hijo dentro de la línea de la caja flexbox, el ancho o alto de cala item Si la caja flexbox tiene dirección de fila, flex-basis representa el width Si la caja flexbox tiene dirección de columna, flex-basis representa el height Valor por defecto auto, Se cambian las medidas con valores es decir 1px 3rem 3%, defiene por defecto  */
   flex-basis: auto;
   /* Es la propiedad que combina a flex-grow, flex-shrink y flex-basis en una sola propiedad */
   /* flex-grow | flex-shrink | flex-basis */
@@ -49,7 +50,7 @@
 
 .item:nth-child(2) {
   /* flex-grow: 0; */
-  /* flex-shrink: 2; */
+  /* flex-shrink: 1; */
   order: -1;
 }
 

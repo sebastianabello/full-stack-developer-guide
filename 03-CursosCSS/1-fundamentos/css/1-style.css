@@ -169,7 +169,9 @@ https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
 .p-pseudoclases:hover {
   font-size: 20px;
 }
-
+/*
+ Target - Se aplica cuando el elemento es el objetivo de un enlace quiere decir que el elemento es el que esta siendo seleccionado
+  */
 #temario-css:target {
   background-color: lightgreen;
 }
