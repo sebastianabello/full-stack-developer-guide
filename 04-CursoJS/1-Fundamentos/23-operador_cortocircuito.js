@@ -8,8 +8,8 @@ function saludar(nombre) {
   console.log(`Hola ${nombre}`);
 }
 
-saludar("sebas");
-saludar();
+saludar("sebas"); //Hola sebas
+saludar(); //Hola Desconocido
 console.log(false || "Valor d la derecha");
 
 //📌Cortocircuito AND --> cuando el valor de la izquierda en la expresion siempre pueda validad a false, es el valor que se cargara por defecto.

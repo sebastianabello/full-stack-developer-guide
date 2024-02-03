@@ -2,7 +2,7 @@
 
 const factorial = (numero = undefined) => {
   if (numero == undefined) return console.warn("No se ingreso ningun numero");
-  if (typeof numero !== "numero")
+  if (typeof numero !== "number")
     return console.error(`El valor "${numero}" ingresado, No es un numero`);
   if (numero === 0) return console.error("El numero no puede ser 0");
   if (Math.sign(numero) === -1)
@@ -10,6 +10,7 @@ const factorial = (numero = undefined) => {
 
   let factorial = 1;
   for (i = numero; i > 1; i--) {
+    console.log(i);
     factorial *= i;
   }
 

@@ -4,7 +4,7 @@ const calcularanios = (fecha = undefined) => {
   if (fecha === undefined) return console.warn("No ingresaste la fecha");
 
   if (!fecha instanceof Date)
-    return console.warn("El valo que ingresaste no es es una fehca valida");
+    return console.warn("El valor que ingresaste no es es una fehca valida");
 
   let hoyMenosFecha = new Date().getTime() - fecha.getTime(),
     aniosEnMS = 1000 * 60 * 60 * 24 * 365;

@@ -2,7 +2,6 @@
 
 const b = {};
 console.log(b);
-
 const juan = {
   nombre: "sebas",
   apellido: "Abello",
@@ -33,15 +32,15 @@ console.log(juan);
 console.log(juan["nombre"]);
 
 //✔forma mas comun
-console.log(juan.apellido);
-console.log(juan.pasatiempo[1]);
-console.log(juan.contacto.email);
+console.log(juan.apellido); //Abello
+console.log(juan.pasatiempo[1]); //Estudiar
+console.log(juan.contacto.email); // Juanse.abello@gmail.com
 
 //Para acceder a los metodos:
 juan.saludar();
 juan.decirMiNombre();
 
-//Para ver que metodos y propiedades esta en un objeto se puede usar
+//Para ver que metodos y propiedades/atributos que estan en un objeto se puede usar
 console.log(Object.keys(juan));
 //Para saber que valor tiene cada propiedad se usa
 console.log(Object.values(juan));

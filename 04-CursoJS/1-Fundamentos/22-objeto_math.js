@@ -20,7 +20,7 @@ console.log(Math.ceil(7.8));
 //📢floor()--> retorna el numero inferior entero
 console.log(Math.floor(7.8));
 
-//📢round()--> retorna el numero entero inferior o posterior segun en el decimal que numero sea.
+//📢round()--> retorna el numero entero inferior o posterior segun en el decimal.
 // #.decimal>#.4 retorna el posterior
 // #.decimal<=#.4 retorna el inferior
 
@@ -81,6 +81,7 @@ Math.trunc(42.84); // 42
 Math.trunc(0.123); //  0
 Math.trunc(-0.123); // -0
 Math.trunc("-1.123"); // -1
+Math.trunc(Infinity); // Infinity
 Math.trunc(NaN); // NaN
 Math.trunc("foo"); // NaN
 Math.trunc(); // NaN

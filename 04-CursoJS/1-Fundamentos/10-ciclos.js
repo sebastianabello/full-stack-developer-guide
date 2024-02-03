@@ -47,10 +47,22 @@ for (const propiedad in juan) {
 //for of --> Permite recorrer los elementos que son iterables es decir que permita partirce en pequeños elementos como los areglos; otros casos son objeto, aray, string etc..
 //Array:
 for (const elementos of numeros) {
-  console.log(elementos);
+  console.log(elementos); //10, 20, 30, 40, 50, 60, 70
 }
 //String:
-let cadena = "Hola sebastian";
+let cadena = "Hola sebas";
 for (const elementos of cadena) {
   console.log(elementos);
+  /*
+  H
+  o
+  l
+  a
+
+  s
+  e
+  b
+  a
+  s
+  */
 }

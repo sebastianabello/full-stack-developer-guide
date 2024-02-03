@@ -27,8 +27,8 @@ const validarEmail = (email = "") => {
 
 validarEmail();
 validarEmail(34);
-validarEmail("juan,sas,2fas@gmal.com");
-validarEmail("Juanse.abello.2004@gmail.com");
+validarEmail("juan,sas,2fas@gmal.com"); //false
+validarEmail("Juanse.abello.2004@gmail.com"); //true
 
 //fusion de ejercicio 19 y 20
 const validarPatron = (cadena = "", patron = undefined) => {
@@ -39,7 +39,7 @@ const validarPatron = (cadena = "", patron = undefined) => {
     );
 
   if (patron === undefined)
-    return console.warn("No ingresaste una cadena de texota ");
+    return console.warn("No ingresaste una cadena de texto ");
   if (patron instanceof RegExp)
     return console.error(`El valor "${patron}" No es una expresion regular`);
 

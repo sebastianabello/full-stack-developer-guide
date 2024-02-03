@@ -12,7 +12,7 @@ console.log(fecha.getDate());
 //Dia de la semana( 1. lunes 2. martes ....)
 console.log(fecha.getDay());
 
-//Mes del año en un arreglo
+//Mes del año
 console.log(fecha.getMonth());
 
 //Año actual

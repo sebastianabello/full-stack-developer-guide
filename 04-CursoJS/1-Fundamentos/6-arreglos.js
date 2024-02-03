@@ -80,7 +80,7 @@ let pos = frutas.indexOf("Banana"); // (pos) es la posición para abreviar
 //recibe 3 parametros: posicion, cantidad de elementos a eliminar, elementos a agregar
 let vegetales = ["Repollo", "Nabo", "Rábano", "Zanahoria", "Pepino", "Tomate"];
 console.log(vegetales);
-// ["Repollo", "Nabo", "Rábano", "Zanahoria"]
+// ["Repollo", "Nabo", "Rábano", "Zanahoria", "Pepino", "Tomate"]
 
 let poss = 1,
   numElementos = 2;
@@ -144,7 +144,7 @@ console.log(pets.includes("cat"));
 console.log(pets.includes("at"));
 // Expected output: false
 
-//🔴join() ----> Une todos los elementos de una matriz (u objeto similar) en una cadena y devuelve esta cadena.
+//🔴join() ----> Une todos los elementos de una matriz (u objeto similar) en una cadena y devuelve esta cadena. si dentro de los paremtesis se especifica algo, con ese valor especificado se unira a una cadena por defecto si no colocamos nada este seran (,)
 const elements = ["Fire", "Air", "Water"];
 
 console.log(elements.join());
@@ -192,7 +192,7 @@ console.log(result);
 
 //🔴reduce() ----> Aplica una función a un acumulador y a cada valor de un array (de izquierda a derecha) para reducirlo a un único valor.
 //Recibe 4 parametros: acumulador, valorActual, indice, arreglo
-
+//El acumulador inicialmente es el valor inicial que se le pasa como segundo parametro
 const array9 = [1, 2, 3, 4];
 
 // 0 + 1 + 2 + 3 + 4
@@ -215,7 +215,7 @@ const reversed = array10.reverse();
 console.log("reversed:", reversed);
 // Expected output: "reversed:" Array ["three", "two", "one"]
 
-// Careful: reverse is destructive -- it changes the original array.
+// Cuidado : la inversión es destructiva: cambia la matriz original asi se ponga en una variable igual va cambiar el array original
 console.log("array1:", array10);
 // Expected output: "array1:" Array ["three", "two", "one"]
 

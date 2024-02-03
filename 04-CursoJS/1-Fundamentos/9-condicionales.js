@@ -24,7 +24,7 @@ if (edad <= 17) {
   console.log("Eres mayor de edad");
 }
 
-//📌 if-else if- else --> Mas de dos condiciones
+//📌 if - else if - else --> Mas de dos condiciones
 
 //EJEMPLO:
 let hora = 22;
@@ -45,7 +45,7 @@ if (hora >= 0 && hora < 6) {
 //variable = (condicion)? verdadero:falso;
 
 let eresMayor = edad >= 18 ? "Eres mayor de edad" : "Eres menor de edad";
-console.log(eresMayor);
+console.log(eresMayor); //Eres menor de edad
 
 //📌switch - case
 

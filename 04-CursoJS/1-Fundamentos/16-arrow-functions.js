@@ -27,6 +27,7 @@ const sumar = function (a, b) {
 console.log(sumar(8, 9));
 
 //Nueva manera:
+//Como es una arrow function se auto retorna el valor
 const sumar1 = (a, b) => a + b;
 console.log(sumar1(8, 10));
 

@@ -84,7 +84,7 @@ class Pelicula {
         `${propiedad} "${valor}" ingresado, No es un arreglo`
       );
     if (valor.length === 0)
-      return console.error(`${propiedad} "${valor}" no tiene datos`);
+      return console.error(`${propiedad} "${valor}" no tiene nada`);
 
     for (let cadena of valor) {
       if (typeof cadena !== "string")
@@ -111,6 +111,7 @@ class Pelicula {
     if (this.validarCadena("Director", director))
       this.validarLongitud("Director", director, 51);
   }
+  //Aqui se puede hacer mas validaciones ya que si mete un numero no lo valida es decir un 0002 lo valida como un año valido y no lo es.
   validarEstreno(estreno) {
     if (this.validarNumero("Año de estreno", estreno))
       if (!/^([0-9]){4}$/.test(estreno))

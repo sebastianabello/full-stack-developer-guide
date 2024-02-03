@@ -3,7 +3,7 @@
 const devolverCuadrados = (arr = undefined) => {
   if (arr === undefined)
     return console.warn("No ingresaste un arreglo de numeros");
-  if (!arr instanceof Array)
+  if (!(arr instanceof Array))
     return console.warn("El valor que ingresaste no es un arreglo");
   if (arr.length === 0) return console.error("El arreglo esta vacio");
 
