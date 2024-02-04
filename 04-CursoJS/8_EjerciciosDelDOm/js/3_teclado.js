@@ -8,9 +8,8 @@ export function moveBall(e, ball, stage) {
     //getBoundingClientRect(): devuelve el tamaño de un elemento y su posición relativa respecto a la ventana de visualización (viewport).
     limitsBall = $ball.getBoundingClientRect(),
     limitsStage = $stage.getBoundingClientRect();
-  /*console.log(e.keyCode);
-  console.log(e.key);
-  console.log(limitsBall, limitsStage);*/
+
+  // console.log(limitsBall, limitsStage);
 
   switch (e.keyCode) {
     case 37:

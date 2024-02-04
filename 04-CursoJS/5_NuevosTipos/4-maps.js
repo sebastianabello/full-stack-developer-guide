@@ -11,7 +11,7 @@ miMap.set("nombre", "Juan");
 miMap.set("edad", 19);
 
 console.log(miMap.get("nombre")); // 'Juan'
-console.log(miMap.get("edad")); // 30
+console.log(miMap.get("edad")); // 19
 
 //📌Claves únicas
 //📢Cada clave en un Map es única, lo que significa que no puede haber claves duplicadas. Si intentas asignar un valor a una clave que ya existe, simplemente se actualizará el valor asociado con esa clave.

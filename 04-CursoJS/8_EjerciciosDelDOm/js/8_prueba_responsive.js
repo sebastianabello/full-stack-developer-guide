@@ -7,6 +7,9 @@ export default function responsiveTester(form) {
   d.addEventListener("submit", (e) => {
     if (e.target === $form) {
       e.preventDefault();
+      //window.open(url, name, specs, replace)
+      //name: _blank, _self, _parent, _top, name
+      //specs: ancho, alto, left, top, menubar, toolbar, location, resizable, scrollbars
       tester = window.open(
         $form.direccion.value,
         "tester",

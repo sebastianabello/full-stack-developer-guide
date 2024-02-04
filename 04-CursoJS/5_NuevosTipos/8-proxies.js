@@ -71,8 +71,8 @@ const manejador = {
 const juan = new Proxy(persona, manejador);
 juan.nombre = "Juan";
 juan.apellido = "Abello";
-juan.edad = 35;
-juan.twitter = "@jonmircha";
-console.log(jon);
+juan.edad = 20;
+juan.twitter = "@juandev";
+console.log(juan);
 
 console.log(persona);

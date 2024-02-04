@@ -46,6 +46,5 @@ export default function slider() {
   }
 
   // Iniciar el intervalo para avanzar automáticamente cada cierto tiempo
-  const intervalId = setInterval(nextSlide, 3000); // Cambia el valor (en milisegundos) según tus necesidades
-}
+  const intervalId = setInterval(nextSlide, 3000); 
 */

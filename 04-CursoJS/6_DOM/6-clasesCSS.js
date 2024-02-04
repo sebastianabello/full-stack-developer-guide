@@ -1,8 +1,8 @@
 const $card = document.querySelector(".card");
 
 console.log($card);
-console.log($card.className);
-console.log($card.classList);
+console.log($card.className); //muestra la clase que tiene
+console.log($card.classList); //muestra las clases que tiene
 //se puede verificar si esta un estilo
 console.log($card.classList.contains("rotate-45"));
 

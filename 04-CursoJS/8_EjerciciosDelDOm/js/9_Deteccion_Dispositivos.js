@@ -5,6 +5,7 @@ const d = document,
 export default function userDeviceInfo(id) {
   const $id = d.getElementById(id),
     isMobile = {
+      // i significa insensible a mayusculas o minusculas
       android: () => ua.match(/android/i),
       ios: () => ua.match(/iphone|ipad|ipod/i),
       windows: () => ua.match(/windows phone/i),

@@ -43,7 +43,7 @@ for (const propiedad in persona) {
 let aleatorio = Math.round(Math.random() * 100 + 5);
 
 const objUsuarios = {
-  propiedad: "Valor",
+  propiedad: "Valor\n",
   [`id_${aleatorio}`]: "Valor Aleatorio",
 };
 console.log(objUsuarios);

@@ -115,7 +115,7 @@ header h1 {
 
 /* **********  Botones del reloj ********** */
 .reloj-c {
-  color: #053964;
+  color: white;
 }
 
 .reloj-button button {
@@ -130,6 +130,7 @@ header h1 {
 .reloj-button button:hover {
   background-color: rgb(235, 115, 115);
   color: white;
+  transition: all 0.2s ease;
 }
 
 /* **********  Eventos del teclado ********** */

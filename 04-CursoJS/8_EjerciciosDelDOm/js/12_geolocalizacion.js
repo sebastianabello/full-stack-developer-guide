@@ -25,5 +25,10 @@ export default function getGeolocation(id) {
     console.log(err);
   };
 
+  //getCurrentPosition: obtiene la ubicacion actual del usuario
+  //recibe 3 parametros: success, error, options
+  //success: funcion que se ejecuta si se obtiene la ubicacion
+  //error: funcion que se ejecuta si no se obtiene la ubicacion
+  //options: objeto que contiene las opciones de la peticion
   n.geolocation.getCurrentPosition(success, error, options);
 }
