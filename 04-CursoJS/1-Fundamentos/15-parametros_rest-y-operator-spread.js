@@ -48,7 +48,7 @@ const array2 = [4, 5, 6];
 const concatenatedArray = [...array1, ...array2];
 console.log(concatenatedArray); // [1, 2, 3, 4, 5, 6]
 
-// Clonar array
+// Clonar array pero solo del primer nivel, si el array tiene objetos anidados, estos no se clonaran.
 const clonedArray = [...array1];
 console.log(clonedArray); // [1, 2, 3]
 

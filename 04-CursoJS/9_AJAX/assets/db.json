@@ -30,6 +30,12 @@
         "ASP.NET"
       ],
       "anio_creacion": 2000
+    },
+    {
+      "id": "73d3",
+      "nombre": "dsada",
+      "frameworks": "moon",
+      "anio_creacion": "1995"
     }
   ],
   "peliculas": [

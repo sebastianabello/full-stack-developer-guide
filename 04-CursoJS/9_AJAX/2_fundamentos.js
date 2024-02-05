@@ -7,6 +7,7 @@
 //El atractivo de AJAX es su naturaleza "asíncrona", lo que significa que puede comunicarse con el servidor, intercambiar datos y actualizar la página sin tener que recargar el navegador.
 
 //fetch: Es una API que proporciona una interfaz para recuperar recursos (incluyendo de forma cruzada) mediante el uso de promesas.
+//Una interfaz es un conjunto de métodos y propiedades que un objeto define para interactuar con otros objetos.
 
 //axios: Es una biblioteca de JavaScript que se utiliza para realizar solicitudes HTTP desde el navegador o NodeJS.
 

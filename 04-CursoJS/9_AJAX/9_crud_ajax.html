@@ -82,6 +82,9 @@
         });
 
         xhr.open(method || "GET", url);
+        //setRequestHeader sirve para enviar datos en formato JSON al servidor
+        //recibe dos parametros, el primero es el nombre del encabezado y el segundo es el valor del encabezado
+
         xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
         xhr.send(JSON.stringify(data));
       };
@@ -118,6 +121,7 @@
       d.addEventListener("submit", (e) => {
         if (e.target === $form) {
           e.preventDefault();
+          //e.target.id.value es para saber si se va a hacer un POST o un PUT
           if (!e.target.id.value) {
             //POST
             ajax({

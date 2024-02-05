@@ -1,3 +1,12 @@
+//pasos para realizar una petición AJAX con fetch async await:
+// 1. Crear una función asíncrona.
+// 2. Dentro de la función, usar la palabra clave await antes de la llamada a fetch.
+// 3. Usar la palabra clave try para manejar la respuesta de la petición.
+// 4. Usar la palabra clave catch para manejar los errores de la petición.
+// 5. Usar la palabra clave finally para ejecutar código independientemente del resultado de la petición.
+// 6. Llamar a la función.
+// 7. Usar la respuesta.
+
 (() => {
   const $fetchAsync = document.getElementById("fetch-async"),
     $fragment = document.createDocumentFragment();
