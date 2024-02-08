@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Select Anidados</h1>
+    <h2>Mexico</h2>
+    <label for="select-primary">estados</label>
+    <select name="primary" id="select-primary">
+      <option value="">Elige un estado</option>
+    </select>
+    <label for="select-secondary">municipios</label>
+    <select name="secondary" id="select-secondary">
+      <option value="">Elige un municipio</option>
+    </select>
+    <p></p>
+    <script>
+      const d = document,
+        $selectPrimary = d.getElementById("select-primary"),
+        $selectSecondary = d.getElementById("select-secondary"),
+        $p = d.querySelector("p");
+
+      function loadStates() {
+        fetch("https://api-sepomex.hckdrk.mx/query/get_estados")
+          .then((res) => (res.ok ? res.json() : Promise.reject(res)))
+          .then((json) => {
+            let html = "";
+            json.response.estado.forEach((el) => {
+              html += `<option value="${el}">${el}</option>`;
+            });
+            $selectPrimary.innerHTML = html;
+          })
+          .catch((err) => {
+            let message = err.statusText || "Ocurrió un error";
+            $selectPrimary.nextElementSibling.innerHTML = `Error ${err.status}: ${message}`;
+          });
+      }
+
+      function loadTowns(state) {}
+
+      d.addEventListener("DOMContentLoaded", loadStates);
+
+      $selectPrimary.addEventListener("change", (e) => {
+        loadTowns(e.target.value);
+      });
+    </script>
+  </body>
+</html>
