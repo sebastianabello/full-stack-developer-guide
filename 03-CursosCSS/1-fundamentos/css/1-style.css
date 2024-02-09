@@ -193,7 +193,7 @@ https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
 .lista-pseudoclases li:nth-child(4n) {
   font-size: 30px;
 }
-/* Desde el hijo 3+ 1 pero va de 3 en 3*/
+/* Desde el hijo 4 pero va de 3 en 3*/
 .lista-pseudoclases li:nth-child(3n + 1) {
   font-weight: bold;
 }

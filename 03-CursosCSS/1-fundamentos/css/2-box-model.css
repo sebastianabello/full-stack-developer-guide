@@ -119,7 +119,7 @@ Propiedad Display
 .caja-none {
   display: none;
 }
-
+/* visibility: hidden hace que el elemnto no se muestre pero sigue ocupando su espacio */
 .caja-hidden {
   visibility: hidden;
 }

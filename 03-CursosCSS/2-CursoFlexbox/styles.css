@@ -13,14 +13,14 @@
   /* Define que una caja sera flexbox de bloque o flexbox de linea */
   /* flex | inline-flex */
   display: flex;
-  /* Define que el eje principañ (main axis) row - x, column -y  */
+  /* Define que el eje principañ (main axis) row - x, column -y  por defecto es row */
   /* row | row reverse  | column | column-reverse */
   flex-direction: row;
   /* Define como se van a ordenar los elementos */
   /* Define si la caja flexbox envuelve o NO a sus hijos */
   /* wrap | nowrap | wrap-reverse */
   flex-wrap: nowrap;
-  /* Define la alineacion de los hojos en el eje transversal (cross axis), dentro de cada linea */
+  /* Define la alineacion de los hijos en el eje transversal (cross axis), dentro de cada linea */
   /* stretch | flex-start | fle-end | center | baseline */
   align-items: stretch;
   /* Define la alineacion de los hijos en el eje trasversal (cross axis), no funciona cuando los hijos estan en una sola linea es decir no puede esta en (nowrap) */

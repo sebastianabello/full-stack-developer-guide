@@ -178,7 +178,7 @@ writing-mode
   white-space: pre;
 }
 
-/* Separacion de las cada palabra */
+/* Separacion de  cada palabra */
 .word-spacing {
   font-size: 1rem;
   word-spacing: 3rem;

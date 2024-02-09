@@ -11,7 +11,7 @@ img {
 
 /*
 object-fit: fill; // default
-object-fit: cover; sirve para que la imagen se ajuste al tamaño del contenedor
+object-fit: cover; sirve para que la imagen se ajuste al tamaño del contenedor y re recprte
 object-fit: none; // no se ajusta al tamaño del contenedor
 object-fit: contain; // se ajusta al tamaño del contenedor pero no se recorta
 */

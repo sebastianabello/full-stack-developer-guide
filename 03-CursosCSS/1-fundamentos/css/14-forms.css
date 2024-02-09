@@ -58,6 +58,8 @@ html {
   font-weight: bold;
   font-size: 1.25rem;
   color: #fff;
+  border: #000 3px solid;
+  outline: none;
 }
 
 .contact-form input[type="submit"]:hover {
