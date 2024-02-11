@@ -49,3 +49,5 @@ console.log(Object.values(juan));
 //retorna un booleano
 console.log(juan.hasOwnProperty("nombre")); //true
 console.log(juan.hasOwnProperty("nacimiento")); //false
+
+//faltan
