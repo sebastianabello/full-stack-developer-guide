@@ -38,5 +38,5 @@ const persona2 = {
   },
 };
 
-const funcionSaludo = persona2.saludar.bind(persona);
+const funcionSaludo = persona2.saludar.bind(persona2);
 funcionSaludo(); // "Hola, soy Juan"

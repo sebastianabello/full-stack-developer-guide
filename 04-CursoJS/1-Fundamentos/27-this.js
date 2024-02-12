@@ -10,7 +10,7 @@
 const persona = {
   nombre: "Juan",
   saludar: function () {
-    console.log(`Hola, soy ${this.nombre}`);
+    console.log(`Hola, soy ${this.nombre}`); // "Hola, soy Juan"
   },
 };
 
