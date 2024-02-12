@@ -22,11 +22,11 @@ class Perro extends Animal {
     super(nombre, genero);
     this.tamanio = tamanio;
   }
-  //al escribir los metodos lo hacemos como si fuera una funcion normal
+  //Sobreescritura de metodos
   sonar() {
     console.log("Soy un perro y mi sonido es un ladrido");
   }
-
+  //Nuevo metodo
   ladrar() {
     console.log("Guauu Guauu");
   }

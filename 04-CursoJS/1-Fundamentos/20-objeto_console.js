@@ -20,7 +20,7 @@ console.clear();
 
 console.log(window);
 
-console.log(document);
+console.log(document); //muestra la estructura de la pagina html
 
 //dir muestra todo lo que se puede hacer con el objeto
 console.dir(window);
@@ -29,7 +29,7 @@ console.dir(document);
 //Agrupar datos para mostrar
 console.group("Cursos de programacion");
 console.log("java");
-console.log("pyrhon");
+console.log("python");
 console.log("javascript");
 console.log("chocolate");
 console.groupEnd();

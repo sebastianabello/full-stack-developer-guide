@@ -23,7 +23,7 @@ const persona = {
   rol: "admin",
 };
 //📢IMPORTANTE para que la destructuracion funcione en objetos es importante que la variable que se trata de crear se llame igual que la propiedad a la cual se pretende aislar en una sola variable.
-//👀El orden en el que se coloque no importa con que se resoete que se llamen igual
+//👀El orden en el que se coloque no importa con que se respete que se llamen igual es suficiente
 //cargo no existe en el objeto persona pero se puede crear con la destructuracion, pero quedara undefined
 let { nombre, apellido, edad, cargo } = persona;
-console.log(nombre, apellido, edad, cargo);
+console.log(nombre, apellido, edad, cargo); // juan abello 20 undefined

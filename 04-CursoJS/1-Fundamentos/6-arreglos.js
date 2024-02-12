@@ -19,10 +19,10 @@ console.log(b.length); //4
 //Para acceder a los elementos de un arreglo es de este modo:
 
 console.log(b[0]); //Posicion 1 del array es decir (1)
-console.log(b[2]);
+console.log(b[2]); //Posicion 3 del array es decir (Hola)
 console.log(b[3][2]); // De igual manera se recorre un array dentro de otro array
 const c = [1, "holi", ["A", "B", "C", ["d", "e", "f"]]];
-console.log(c[2][3][1]);
+console.log(c[2][3][1]); //e
 
 //Forma nueva de crear arreglos
 
@@ -55,9 +55,11 @@ console.log(array4); // ["a", "b", "c", "d", "e", "f"]
 console.log(array1); // ["a", "b", "c"]
 
 // .copyWithin(): Copia una secuencia de elementos de la matriz dentro de la misma matriz. El método copyWithin() es capaz de copiar parte de un array a otra parte del mismo array sin cambiar su longitud. modifica el array original
+//recibe 3 parametros: posicion donde se pegara, desde donde se copiara, hasta donde se copiara
+//El valor hasta donde se copiara no se incluye
 const array5 = ["a", "b", "c", "d", "e"];
 console.log(array5.copyWithin(0, 3, 4)); // ["d", "b", "c", "d", "e"] //copia desde la posicion 3 hasta la 4 y lo pega en la posicion 0
-console.log(array5);
+console.log(array5); // ["d", "b", "c", "d", "e"]
 console.log(array5.copyWithin(1, 3)); // ["d", "d", "e", "d", "e"] //copia desde la posicion 3 hasta el final y lo pega en la posicion 1
 
 //.entries(): Devuelve un nuevo objeto Array Iterator que contiene los pares clave/valor para cada índice en el array.
@@ -65,18 +67,24 @@ const array6 = ["a", "b", "c"];
 const iterator = array6.entries();
 console.log(iterator.next().value); // [0, "a"]
 console.log(iterator.next().value); // [1, "b"]
+console.log(iterator.next().value); // [2, "c"]
+console.log(iterator.next().value); // undefined
 
 //.every(): Comprueba si todos los elementos en un array pasan la prueba implementada por la función dada.
 const isBelowThreshold = (el) => el < 40;
 const array7 = [1, 30, 39, 29, 10, 13];
 console.log(array7.every(isBelowThreshold)); // true
 
-// .fill() cambia todos los elementos en un arreglo por un valor estático, puede recibir 3 parametros: valor, inicio, fin, dos parametros: valor, inicio o un parametro: valor
+// .fill() cambia todos los elementos en un arreglo por un valor estático, modifica el array original, el valor fin no se incluye
+//puede recibir 3 parametros: valor, inicio, fin,
+// dos parametros: valor, inicio
+// un parametro: valor
 const e = Array(4).fill(false);
 console.log(e); //[false, false, false, false]
 
 const array8 = [1, 2, 3, 4];
 console.log(array8.fill(0, 2, 4)); // [1, 2, 0, 0]
+console.log(array8.fill(0, 2, 3)); // [1, 2, 0, 4]
 console.log(array8.fill(5, 1)); // [1, 5, 5, 5]
 console.log(array8.fill(6)); // [6, 6, 6, 6]
 
@@ -113,7 +121,7 @@ console.log(arr2.flat()); // [1, 2, 3, 4, [5, 6]]
 const arr3 = [1, 2, [3, 4, [5, 6]]];
 console.log(arr3.flat(2)); // [1, 2, 3, 4, 5, 6]
 
-// .flatMap(): Primero mapea cada elemento usando una función de mapeo, luego aplana el resultado en un nuevo array. es decir es como hacer un map y luego un flat
+// .flatMap(): Primero mapea cada elemento usando una función de mapeo, luego aplana el resultado en un nuevo array. es decir es como hacer un map y luego un flat, no se modifica el array original
 const arr4 = [1, 2, 3, 4];
 console.log(arr4.map((x) => [x * 2])); // [[2], [4], [6], [8]]
 console.log(arr4.flatMap((x) => [x * 2])); // [2, 4, 6, 8]
@@ -131,7 +139,7 @@ colores.forEach(function (el, index) {
 //<li id="1">verde</li>
 //<li id="2">Azul</li>
 const array13 = ["a", "b", "c"];
-array1.forEach((element) => console.log(element));
+array13.forEach((element) => console.log(element));
 /*
 a
 b
@@ -215,13 +223,13 @@ console.log(array17.reduce(reducer)); // 10
 (valorPrevio = 10), (valorActual = 0), (indice = 0);
 */
 
-//.reverse(): Invierte el orden de los elementos de un array in place. El primer elemento pasa a ser el último y el último pasa a ser el primero.
+//.reverse(): Invierte el orden de los elementos de un array. El primer elemento pasa a ser el último y el último pasa a ser el primero.
 const array18 = ["one", "two", "three"];
 console.log("array1:", array18); // Expected output: "array1:" Array ["one", "two", "three"]
 const reversed = array18.reverse();
 console.log("reversed:", reversed); // Expected output: "reversed:" Array ["three", "two", "one"]
 
-//.shift(): Elimina el primer elemento del array y lo devuelve. Este método cambia la longitud del array.
+//.shift(): Elimina el primer elemento del array. Este método cambia la longitud del array.
 let frutss = ["Manzana", "Banana"];
 let frutaEliminada = frutss.shift();
 console.log(frutss); // ["Banana"]
@@ -251,21 +259,21 @@ puntos.sort(); // [1, 10, 2, 21]
 const cosas = ["word", "Word", "1 Word", "2 Words"];
 cosas.sort(); // ['1 Word', '2 Words', 'Word', 'word']
 // En Unicode, los números vienen antes que las letras mayúsculas
-// y estas vienen antes que las letras minúsculas.
+// y las letras mayusculas vienen antes que las letras minúsculas.
 
-//.splice() ----> no solo se puede eliminar elementos del array, si no que también podemos extraerlos guardándolo en un nuevo array. ¡Ojo! que al hacer esto estaríamos modificando el array de origen.
+//.splice(): no solo se puede eliminar elementos del array, si no que también podemos extraerlos guardándolo en un nuevo array. ¡Ojo! que al hacer esto estaríamos modificando el array de origen.
 //recibe 3 parametros: posicion, cantidad de elementos a eliminar, elementos a agregar
 let vegetales = ["Repollo", "Nabo", "Rábano", "Zanahoria", "Pepino", "Tomate"];
 console.log(vegetales); // ["Repollo", "Nabo", "Rábano", "Zanahoria", "Pepino", "Tomate"]
 
-let poss = 1,
-  numElementos = 2;
-
-let elementosEliminados = vegetales.splice(poss, numElementos); // ["Nabo", "Rábano"] ==> Lo que se ha guardado en "elementosEliminados"
+let elementosEliminados = vegetales.splice(1, 2); // ["Nabo", "Rábano"] ==> Lo que se ha guardado en "elementosEliminados"
 
 console.log(vegetales); // ["Repollo", "Zanahoria", "Pepino", "Tomate"] ==> Lo que actualmente tiene "vegetales"
+vegetales.splice(2, 0, "Ajo", "Cebolla");
+console.log(vegetales); // ["Repollo", "Zanahoria", "Ajo", "Cebolla", "Pepino", "Tomate"]
 
 //.toString(): Devuelve una cadena de caracteres representando el array especificado y sus elementos.
+//entre toString y join el mas veloz es toString, ya que join es mas lento por que se le puede especificar un valor para unir los elementos del array, en cambio toString no se le especifica nada y por eso es mas rapido.
 const array20 = [1, 2, "a", "1a"];
 console.log(array20.toString()); // "1,2,a,1a"
 

@@ -20,6 +20,8 @@ console.log(7 >= 7); //true
 = Asignacion de variable
 == Comparacion de valores
 === Comparacion de valores y tipo de datos
+!= Diferente de
+!== Diferente de y tipo de datos
 */
 console.log(7 == 7); //true
 console.log("7" == 7); //true
@@ -37,8 +39,9 @@ let i = 1;
 i = i + 1;
 console.log(i); //2
 //con ++:
-i++;
-console.log(i); //3
+let j = 1;
+j++;
+console.log(j); //2
 
 //Opaciones con mayor # y operadores
 //i+=#

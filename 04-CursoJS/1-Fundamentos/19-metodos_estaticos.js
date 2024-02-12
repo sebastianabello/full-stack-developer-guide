@@ -33,7 +33,7 @@ class Perro extends Animal {
     console.log("Guauu Guauu");
   }
   //📌📢Metodo statico
-  //Un metodo estatico se puede ejecutar sin necesidad de instanciar la clase
+  //Un metodo estatico se puede ejecutar sin necesidad de instanciar la clase se puede llamar en cualquier momento
   static queEres() {
     console.log(
       "Los perros somos animales mamiferos que pertenecemos a la familia de los caninos"
@@ -63,6 +63,6 @@ ani.sonar();
 ani.saludar();
 ani.ladrar();
 
-console.log(ani.getRaza);
-ani.setRaza = "goldenretriver";
-console.log(ani.getRaza);
+console.log(ani.getRaza); //undefined
+ani.setRaza = "goldenretriver"; //Asigna el valor a la raza
+console.log(ani.getRaza); //goldenretriver

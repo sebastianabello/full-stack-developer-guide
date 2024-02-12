@@ -19,6 +19,7 @@ console.log(
 );
 
 //🟡Concatenacion
+
 let saludo2 = "Hola mi nombre es " + nombre + " " + apellido + ".";
 console.log(saludo2);
 
@@ -70,7 +71,7 @@ console.log(lorem.includes("sut")); //true
 //indexOf(): Retorna la posicion de la primera aparicion de la frase que se le pase
 console.log(lorem.indexOf("ipsum")); //6
 
-// lastIndexOf(): Retorna la posicion de la ultima aparicion de la frase que se le pase
+//lastIndexOf(): Retorna la posicion de la ultima aparicion de la frase que se le pase
 console.log(lorem.lastIndexOf("et")); //54
 
 //localeCompare(): Compara dos strings y retorna un valor dependiendo de la comparacion
@@ -98,7 +99,7 @@ console.log(lorem.replace("et", "ET")); //    lorem ipsum, dolor sut amET consec
 //replaceAll(): Reemplaza todas las apariciones de la frase que se le pase por la frase que se le pase
 console.log(lorem.replaceAll("et", "ET")); //    lorem ipsum, dolor sut amET consoctur adipicing elit. Est, ET dolutm
 
-//search(): Ejecuta una búsqueda que encaje entre una expresión regular y el objeto String desde el que se llama.
+//search(): Ejecuta una búsqueda que encaje entre una expresión regular y el objeto String desde el que se llama y retorna la posición de la primera coincidencia.
 console.log(lorem.search(/et/g)); //6
 
 //slice(): Retorna una parte del string dependiendo de los parametros que se le pasen
@@ -117,7 +118,7 @@ console.log(nombre.startsWith("J")); //true
 // si se pasa con un segundo parametro evalua desde la posicion que se le pase
 console.log(nombre.startsWith("u", 1)); //true
 
-//substring(): Retorna una parte del string dependiendo de los parametros que se le pasen
+//substring(): Retorna una parte del string dependiendo de los parametros que se le pasen (no acepta negativos)
 console.log(lorem.substring(6, 11)); //ipsum
 
 // toLocaleLowerCase(): Convierte todo el string en minuscula dependiendo el idioma

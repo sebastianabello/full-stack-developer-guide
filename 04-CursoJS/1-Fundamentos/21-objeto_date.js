@@ -1,7 +1,7 @@
 //Objeto Date
 
 //Actual
-console.log(Date());
+console.log(Date()); //Mon Aug 02 2021 20:00:00 GMT-0500 (hora estandar central)
 
 let fecha = new Date();
 console.log(fecha);
@@ -30,7 +30,7 @@ console.log(fecha.getSeconds());
 //Milisegundos actual
 console.log(fecha.getMilliseconds());
 
-//Solo la fecha
+//Solo la fecha (lunes/mes/dia/año)
 console.log(fecha.toDateString());
 
 //Formato de fecha con hora (mes/dia/año hora)

@@ -56,7 +56,7 @@ numero.forEach((el, index) =>
 function perro() {
   console.log(this);
 }
-perro();
+perro(); //En este caso this hace referencia al objeto window
 
 //En este caso this hace referencia al objeto perro1 y no al objeto window
 const perro1 = {
@@ -67,8 +67,7 @@ const perro1 = {
 };
 perro1.ladrar();
 
-//Pero si se cambia a una arrow function this hace referencia al objeto window
-//Las arrow funcion tienen el poder de saltarse el contexto en el que estan
+//Pero si se cambia a una arrow function this hace referencia al objeto window Las arrow funcion tienen el poder de saltarse el contexto en el que estan
 const perro2 = {
   nombre: "Anaia",
   ladrar: () => {

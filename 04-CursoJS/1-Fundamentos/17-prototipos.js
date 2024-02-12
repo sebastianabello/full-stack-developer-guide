@@ -7,7 +7,7 @@ objetos --Es una instancia de una clase (como una copia de la clase)
 */
 
 //📢Funcion Costructura
-//Esto no se hace asi pero se toma de ejemplo, la forma correcta es con clases
+//Esto no se hace asi pero se toma de ejemplo, la forma correcta es con class
 function Animal(nombre, genero) {
   //Atributos
   this.nombre = nombre;
@@ -25,8 +25,8 @@ function Animal(nombre, genero) {
 const perro = new Animal("Snoopy", "Macho"),
   conejo = new Animal("Lolita", "Hembra");
 
-console.log(perro);
-console.log(conejo);
+console.log(perro); //Se crea un objeto con los atributos y metodos de la funcion constructora
+console.log(conejo); //Se crea un objeto con los atributos y metodos de la funcion constructora
 
 //📌Funcion construtora donde se asigna los metodos al prototipo, no a la funcion como tal.
 
@@ -35,7 +35,7 @@ function Animal2(nombre, genero) {
   this.nombre = nombre;
   this.genero = genero;
 }
-//Metodos agregados al prototipo de la funcion constuctora
+//Metodos agregados al prototipo de la funcion constuctora, esto es mas eficiente ya que no se estan creando metodos para cada objeto que se cree
 Animal2.prototype.sonar = function () {
   console.log("Hago sonido");
 };
@@ -68,4 +68,7 @@ Perro.prototype.constructor = Perro;
 //Sobreescritura de metodos del prototipo padre en el hijo
 Perro.prototype.sonar = function () {
   console.log("Guauu Guauu");
+};
+Perro.prototype.ladrar = function () {
+  console.log("Ladra");
 };

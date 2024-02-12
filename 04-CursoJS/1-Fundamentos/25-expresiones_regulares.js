@@ -16,8 +16,10 @@ let expReg2 = /lorem/gi;
 
 //test() --> Devuelve true o false si encuentra o no la cadena
 //exec() --> Devuelve la cadena encontrada o null
-console.log(expReg.test(cadena));
-console.log(expReg.exec(cadena));
+console.log(expReg.test(cadena)); //true
+console.log(expReg.exec(cadena)); //["Lorem", index: 0, input: "Lorem ipsum dolor sit amet consectetur adipisicing ...", groups: undefined]
 
-console.log(expReg2.test(cadena));
-console.log(expReg2.exec(cadena));
+console.log(expReg2.test(cadena)); //true
+console.log(expReg2.exec(cadena)); //["Lorem", index: 0, input: "Lorem ipsum dolor sit amet consectetur adipisicing ...", groups: undefined]
+
+//Tener encuenta que .test deja el puntero en la ultima coincidencia encontrada, por lo tanto si se ejecurta dos veces seguidas, la segunda vez devolvera false, ya que el puntero esta al final de la cadena, para solucionar esto se puede usar .lastIndex = 0 o usar match() que no tiene este problema

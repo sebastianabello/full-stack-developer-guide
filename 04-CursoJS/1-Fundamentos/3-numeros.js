@@ -44,7 +44,7 @@ console.log(Number.isFinite(numero)); //true
 // .isInteger(): Determina si el valor pasado es un numero entero
 console.log(Number.isInteger(numero)); //true
 
-// .isNaN(): Determina si el valor pasado es un NaN
+// .isNaN(): Determina si el valor pasado es un NaN (Not a Number)
 console.log(Number.isNaN(numero)); //false
 
 // .isSafeInteger(): Determina si el valor pasado es un numero seguro, con numero seguro quiere decir que el numero no es infinito
@@ -61,7 +61,7 @@ console.log(Number.parseInt(num2)); //3 (number)
 // .toExponential(): Retorna una cadena de caracteres que representa el objeto Number en notación exponencial
 let num3 = 123456;
 console.log(num3.toExponential()); //1.23456e+5 (string)
-// si se le pasa un , este sera la cantidad de decimales que se mostraran
+// si se le pasa un numero , este sera la cantidad de decimales que se mostraran
 console.log(num3.toExponential(2)); //1.23e+5 (string)
 
 // .toFixed(): Retorna una cadena de caracteres que representa el objeto Number en notación de punto fijo

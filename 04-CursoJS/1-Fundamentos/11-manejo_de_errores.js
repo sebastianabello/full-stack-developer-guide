@@ -10,7 +10,7 @@ try {
 } catch (error) {
   console.log("catc, captura cualquier error surgido o lanzado en el try");
 } finally {
-  //no es muy usado finally
+  //no es muy usado finally ya que se ejecuta siempre
   console.log(
     "El bloque finaly se ejecuta siempre al final de un un bloque try-catch"
   );

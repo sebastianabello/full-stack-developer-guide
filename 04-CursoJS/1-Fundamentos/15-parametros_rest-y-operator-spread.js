@@ -6,16 +6,15 @@
 //🔴Ejemplo 1:
 function sumar(a, b, ...c) {
   let resultado = a + b;
-
   c.forEach(function (n) {
     resultado += n;
   });
   return resultado;
 }
 
-console.log(sumar(1, 2));
-console.log(sumar(1, 2, 3));
-console.log(sumar(1, 2, 3, 4));
+console.log(sumar(1, 2)); //  3
+console.log(sumar(1, 2, 3)); //  6
+console.log(sumar(1, 2, 3, 4)); //  10
 
 //🔴Ejemplo 2:
 function sumar(...numeros) {
@@ -26,14 +25,14 @@ function sumar(...numeros) {
   return resultado;
 }
 
-console.log(sumar(1, 2, 3, 4, 5)); // Resultado: 15
+console.log(sumar(1, 2, 3, 4, 5)); // 15
 
 //🔴Ejemplo 3: tambien sirve para desestructurar un array
 
 const [primerElemento, ...restoElementos] = [1, 2, 3, 4, 5];
 
-console.log(primerElemento); // Resultado: 1
-console.log(restoElementos); // Resultado: [2, 3, 4, 5]
+console.log(primerElemento); // 1
+console.log(restoElementos); // [2, 3, 4, 5]
 
 //📌Operador Spread
 
@@ -48,7 +47,7 @@ const array2 = [4, 5, 6];
 const concatenatedArray = [...array1, ...array2];
 console.log(concatenatedArray); // [1, 2, 3, 4, 5, 6]
 
-// Clonar array pero solo del primer nivel, si el array tiene objetos anidados, estos no se clonaran.
+// Clonar array pero solo del primer nivel, si el array tiene objetos anidados, estos no se clonaran y se modificarán en ambos arrays
 const clonedArray = [...array1];
 console.log(clonedArray); // [1, 2, 3]
 

@@ -9,7 +9,7 @@ for (let i = 0; i < numero.length; i++) {
   if (i === 5) {
     break;
   }
-  console.log(numero[i]); // 1 2 3 4
+  console.log(numero[i]); // 1 2 3 4 5
 }
 
 //📌Continue
@@ -19,12 +19,12 @@ for (let i = 0; i < numero.length; i++) {
   if (i === 5) {
     continue;
   }
-  console.log(numero[i]);
+  console.log(numero[i]); // 1 2 3 4 5 7 8 9 0
 }
 
 for (let i = 0; i < numero.length; i++) {
   if (i % 2 == 1) {
     continue;
   }
-  console.log(numero[i]); // 0 2 4 6 8
+  console.log(numero[i]); // 1 3 5 7 9
 }
