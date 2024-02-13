@@ -15,6 +15,9 @@ console.log(fecha.getDay());
 //Mes del año
 console.log(fecha.getMonth());
 
+//Milisegundos desde 1970 (timestamp), 1970 porque es el año en el que se creo el lenguaje de programacion JS
+console.log(fecha.getTime());
+
 //Año actual
 console.log(fecha.getFullYear());
 

@@ -26,5 +26,5 @@
 2. respuestas satisfactorias (200–299),
 3. redirecciones (300–399)
 4. errores de los clientes (400–499),
-5. y errores de los servidores (500–599).
+5. errores de los servidores (500–599).
 */

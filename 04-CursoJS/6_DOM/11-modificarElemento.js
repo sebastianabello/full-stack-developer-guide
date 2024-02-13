@@ -1,4 +1,4 @@
-const $cards = document.querySelector(".cards"),
+const $cards1 = document.querySelector(".cards"),
   $newCard = document.createElement("figure");
 
 $newCard.innerHTML = `
@@ -11,7 +11,7 @@ $newCard.classList.add("card");
 //$cards.replaceChild($newCard,$cards.children[1]);
 
 //borrar
-$cards.removeChild($cards.lastElementChild);
+$cards1.removeChild($cards1.lastElementChild);
 
 //insertar nueva
 //$cards.insertBefore($newCard,$cards.firstChild);
@@ -29,7 +29,7 @@ $cards.removeChild($cards.lastElementChild);
 //   beforeend(ultimo hijo)
 //   afterend(hermano siguiente)
 
-/* const $cards = document.querySelector(".cards"),
+const $cards = document.querySelector(".cards"),
   $newCard = document.createElement("figure");
 
 let $contenCard = `
@@ -40,7 +40,7 @@ $newCard.classList.add("card");
 
 $newCard.insertAdjacentHTML("afterbegin", $contenCard);
 $cards.insertAdjacentElement("beforeend", $newCard);
-$newCard.querySelector("figcaption").insertAdjacentText("afterbegin", "Any"); */
+$newCard.querySelector("figcaption").insertAdjacentText("afterbegin", "Any");
 
 //prepend sirve para agregar un elemento al inicio de un padre
 $cards.prepend($newCard);

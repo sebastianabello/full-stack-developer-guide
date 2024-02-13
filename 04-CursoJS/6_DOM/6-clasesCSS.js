@@ -4,7 +4,7 @@ console.log($card);
 console.log($card.className); //muestra la clase que tiene
 console.log($card.classList); //muestra las clases que tiene
 //se puede verificar si esta un estilo
-console.log($card.classList.contains("rotate-45"));
+console.log($card.classList.contains("rotate-45")); 
 
 //Para añadir un estilo ya creado en la hoja de estilo se puede de la siguiente manera.
 

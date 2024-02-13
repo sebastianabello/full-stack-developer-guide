@@ -1,8 +1,8 @@
-console.log(document.documentElement.lang);
-console.log(document.documentElement.getAttribute("lang"));
+console.log(document.documentElement.lang); //es-ES
+console.log(document.documentElement.getAttribute("lang")); //es-ES
 
-console.log(document.querySelector(".link-dom").href);
-console.log(document.querySelector(".link-dom").getAttribute("href"));
+console.log(document.querySelector(".link-dom").href); 
+console.log(document.querySelector(".link-dom").getAttribute("href")); 
 
 document.documentElement.lang = "es";
 console.log(document.documentElement.lang);

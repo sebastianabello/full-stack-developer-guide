@@ -89,6 +89,7 @@ console.log(array8.fill(5, 1)); // [1, 5, 5, 5]
 console.log(array8.fill(6)); // [6, 6, 6, 6]
 
 //.filter(): Crea un nuevo array con todos los elementos que cumplan la condición implementada por la función dada.
+//recibe 3 parametros: elemento, indice, arreglo
 const words = ["spray", "elite", "exuberant", "destruction", "present"];
 const result = words.filter((word) => word.length > 6);
 console.log(result); // ["exuberant", "destruction", "present"]

@@ -74,7 +74,7 @@ class Pelicula {
     if (!valor) return console.warn(`${propiedad} "${valor}" esta vacio`);
     if (typeof valor !== "number")
       return console.error(
-        `${propiedad} "${valor}" ingresado, No es una cadena de texto`
+        `${propiedad} "${valor}" ingresado, No es un numero`
       );
   }
   validarArreglo(propiedad, valor) {

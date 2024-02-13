@@ -1,4 +1,4 @@
-// Antes de explicar como funciona el modelo de JavaScript es importante endender algunos conceptos:
+// Antes de explicar como funciona el modelo de JavaScript es importante entender algunos conceptos:
 
 //📌Procesamiento Single thread y Multi thread.
 

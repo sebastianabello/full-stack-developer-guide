@@ -21,13 +21,13 @@ async function funcionAsincronaDeclarada() {
   try {
     console.log("Inicio Async Function");
 
-    let obj = await cuadradoPromise(0);
+    let obj = await cuadradoPromise(0); // {value: 0, result: 0}
     console.log(`Async function: ${obj.value}, ${obj.result}`);
     obj = await cuadradoPromise(1);
     console.log(`Async function: ${obj.value}, ${obj.result}`);
     obj = await cuadradoPromise(2);
     console.log(`Async function: ${obj.value}, ${obj.result}`);
-    obj = await cuadradoPromise("3");
+    obj = await cuadradoPromise("3"); 
     console.log(`Async function: ${obj.value}, ${obj.result}`);
     obj = await cuadradoPromise(4);
     console.log(`Async function: ${obj.value}, ${obj.result}`);

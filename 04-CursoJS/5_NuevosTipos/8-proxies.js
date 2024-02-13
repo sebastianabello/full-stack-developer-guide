@@ -15,6 +15,7 @@ const handler = {
 };
 
 const proxy = new Proxy(target, handler);
+console.log(proxy.valor); // Obteniendo la propiedad "valor" 42
 
 /*
 📌Trampas comunes:

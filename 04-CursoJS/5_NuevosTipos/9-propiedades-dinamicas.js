@@ -40,7 +40,7 @@ for (const propiedad in persona) {
 }
 
 //Ejemplo:
-let aleatorio = Math.round(Math.random() * 100 + 5);
+let aleatorio = Math.round(Math.random() * 100 + 5); //Genera un número aleatorio entre 5 y 104
 
 const objUsuarios = {
   propiedad: "Valor\n",

@@ -44,7 +44,7 @@ const continentes = ["África", "América", "Asia", "Europa", "Oceanía"],
 
 document.write("<h3>Continentes del Mundo</h3>");
 document.body.appendChild($ul2);
-$ul2.innerHTML = "";
+$ul2.innerHTML = ""; // se hace para limpiar el contenido del ul, ya que si no se hace, se duplica el contenido cada vez que se recarga la página
 continentes.forEach((el) => ($ul2.innerHTML += `<li>${el}</li>`));
 
 //Los fragmentos de documentos son nodos del tipo DocumentFragment.
