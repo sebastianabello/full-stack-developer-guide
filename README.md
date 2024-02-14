@@ -27,6 +27,11 @@ Esta guía comenzará con temas de HTML y CSS, la mayoría de los cuales están 
    - 📖 Ejercicios con el DOM
    - 📡 AJAX
    - 📋 Ejercicios con AJAX
+   - SPA
+   - Reactiviad
+1. 🟢 NodeJS
+  - Primeros pasos
+  - Event loop
 
 ### Inspired by:
 
