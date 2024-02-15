@@ -1,0 +1,15 @@
+{
+  "name": "primeros-pasos-node",
+  "version": "1.0.0",
+  "description": "En este proyecto se aprende npm",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastian <juanse.abello.2004@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "responsimple": "^1.0.1"
+  } 
+}

@@ -1,0 +1,22 @@
+{
+  "name": "todocli",
+  "version": "1.0.0",
+  "description": "Un TodoList basico en la terminal",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "dev-file": "nodemon app-with-file.js",
+    "start-file": "node app-with-file.js"
+  },
+  "keywords": [],
+  "author": "Sebastian",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
