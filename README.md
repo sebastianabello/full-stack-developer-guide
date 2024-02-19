@@ -40,7 +40,7 @@ Esta guía comenzará con temas de HTML y CSS, la mayoría de los cuales están 
      - 🕋 Express Generator
      - 🕋 Express MVC
      - 🌐 Express API
-     - 📚 Ejercicio SSG
+     - 📚 Ejercicio SSG - basico
 
 ### Inspired by:
 
