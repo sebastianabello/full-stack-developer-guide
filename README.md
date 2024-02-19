@@ -27,21 +27,22 @@ Esta guía comenzará con temas de HTML y CSS, la mayoría de los cuales están 
    - 📖 Ejercicios con el DOM
    - 📡 AJAX
    - 📋 Ejercicios con AJAX
-   - SPA
-   - Reactiviad
+   - 📄 SPA
+   - ⚛️ Reactiviad
 1. 🟢 NodeJS
-   - Primeros pasos
-   - Event loop
-   - modulos
-   - npm
-   - Ejercicios
+   - 🏃 Primeros pasos
+   - 👂 Event loop
+   - 📁 modulos
+   - 📖 npm
+   - 📚 Ejercicios
    - Modulos web
-   - Express Basicos
-   - Express Generator
-   - Express MVC
-   - Express API
+     - 🌐 Express Basicos
+     - 🕋 Express Generator
+     - 🕋 Express MVC
+     - 🌐 Express API
+     - 📚 Ejercicio SSG
 
 ### Inspired by:
 
 - Jhonatan Mircha's Channel
-  - 🔔Channel: https://youtube.com/jonmircha?sub_confirmation=1
+- 🔔Channel: https://youtube.com/jonmircha?sub_confirmation=1
