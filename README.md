@@ -30,8 +30,16 @@ Esta guía comenzará con temas de HTML y CSS, la mayoría de los cuales están 
    - SPA
    - Reactiviad
 1. 🟢 NodeJS
-  - Primeros pasos
-  - Event loop
+   - Primeros pasos
+   - Event loop
+   - modulos
+   - npm
+   - Ejercicios
+   - Modulos web
+   - Express Basicos
+   - Express Generator
+   - Express MVC
+   - Express API
 
 ### Inspired by:
 

@@ -1,4 +1,4 @@
-import { format } from "url";
+import { format, resolve } from "url";
 
 const urlObj = {
   protocol: "https",
@@ -11,3 +11,8 @@ const urlObj = {
 const urlString = format(urlObj);
 
 console.log("URL completa:", urlString);
+
+// Resolver una URL relativa
+const resolvedUrl = resolve("https://www.example.com/", "/about");
+
+console.log("URL resuelta:", resolvedUrl);
